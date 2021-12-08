@@ -130,7 +130,7 @@
 // Hero Section
 
 .hero {
-  width: $h-max;
+  width: $w-max;
   height: $h-container;
   background-image: $main-gradient;
   background-size: cover;
@@ -149,6 +149,7 @@
     width: 95%;
     min-width: 90%;
     height: 95%;
+    min-height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
