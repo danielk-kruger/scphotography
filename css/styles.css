@@ -156,7 +156,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
+  margin-bottom: 1rem;
   background-image: url("../images/grayscale-background.jpg");
   background-position: center;
   background-size: cover;
