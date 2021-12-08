@@ -149,15 +149,16 @@
   &-wrapper {
     width: 95%;
     min-width: 90%;
-    height: 95%;
+    height: 90%;
     min-height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     // padding-bottom: 10rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    // margin-top: 1rem;
+    // margin-bottom: 1rem;
+    margin: auto;
     // margin: 0 auto;
     // background: green;
     background-image: url('../images/grayscale-background.jpg');
