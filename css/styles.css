@@ -150,13 +150,13 @@ a {
 .hero-wrapper {
   width: 95%;
   min-width: 90%;
-  height: 90%;
-  min-height: 85%;
+  height: 85%;
+  min-height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   background-image: url("../images/grayscale-background.jpg");
   background-position: center;
   background-size: cover;
