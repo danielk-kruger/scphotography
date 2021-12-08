@@ -13,3 +13,11 @@ mobileMenu.addEventListener('click', () => {
     icon.classList.add('fa-bars');
   }
 });
+
+ScrollReveal().reveal('.hero-content', {
+  distance: '150%',
+  origin: 'bottom',
+  opacity: null,
+  duration: 600,
+  delay: 100,
+});
