@@ -34,7 +34,12 @@ a {
 }
 .navbar-logo {
   max-width: 18rem !important;
-  height: auto;
+  margin-top: 10%;
+}
+@media only screen and (min-width: 300px) {
+  .navbar-logo {
+    margin-right: 15%;
+  }
 }
 .navbar-logo img {
   display: block;
@@ -48,6 +53,11 @@ a {
   z-index: 99;
   cursor: pointer;
   transition: all 0.35s ease-in-out;
+}
+@media only screen and (min-width: 300px) {
+  .navbar .toggle-bars {
+    margin-top: 10%;
+  }
 }
 .navbar .toggle-bars .fa-bars {
   font-size: 1.825rem !important;
@@ -96,9 +106,9 @@ a {
     margin-top: 10%;
   }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 300px) {
   .navbar.mobile .toggle-bars {
-    margin-top: 8%;
+    margin-top: 20%;
   }
 }
 .navbar.mobile .toggle-bars .fa-times {
@@ -150,19 +160,25 @@ a {
 .hero-wrapper {
   width: 95%;
   min-width: 90%;
-  height: 85%;
+  height: 88%;
   min-height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.2rem;
   background-image: url("../images/grayscale-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6), -2px -2px 10px rgba(0, 0, 0, 0.6);
+}
+@media only screen and (min-width: 767px) {
+  .hero-wrapper {
+    height: 90%;
+    min-height: 85%;
+  }
 }
 .hero-wrapper .hero-content {
   color: #efefef;
@@ -188,7 +204,7 @@ a {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 300px) {
   .hero-wrapper .hero-content h2 {
     font-size: 2.625rem;
   }

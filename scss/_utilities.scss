@@ -60,7 +60,7 @@ $h-partial: 25%;
 $lg-screen-size: 1380px;
 $md-screen-size: 992px;
 $sm-screen-size: 767px;
-$xs-screen-size: 380px;
+$xs-screen-size: 300px;
 // $xs-screen-size: 480px;
 
 * {
@@ -126,7 +126,7 @@ a {
 }
 
 @mixin xs-screen {
-  @media only screen and (max-width: $xs-screen-size) {
+  @media only screen and (min-width: $xs-screen-size) {
     @content;
   }
 }

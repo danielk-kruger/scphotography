@@ -11,9 +11,13 @@
 
   &-logo {
     max-width: 18rem !important;
-    // background-color: blue;
-    height: auto;
+    margin-top: 10%;
+    // height: auto;
     // padding-bottom: -20rem !important;
+
+    @include xs-screen {
+      margin-right: 15%;
+    }
 
     img {
       display: block;
@@ -29,6 +33,10 @@
     z-index: 99;
     cursor: pointer;
     transition: all 0.35s ease-in-out;
+
+    @include xs-screen {
+      margin-top: 10%;
+    }
 
     .fa-bars {
       font-size: 1.825rem !important;
@@ -86,7 +94,7 @@
       }
 
       @include xs-screen {
-        margin-top: 8%;
+        margin-top: 20%;
       }
 
       .fa-times {
@@ -149,7 +157,7 @@
   &-wrapper {
     width: 95%;
     min-width: 90%;
-    height: 85%;
+    height: 88%;
     min-height: 80%;
     display: flex;
     justify-content: center;
@@ -157,7 +165,7 @@
     text-align: center;
     // padding-bottom: 10rem;
     // margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.2rem;
     // margin: auto;
     // margin: 0 auto;
     // background: green;
@@ -168,6 +176,11 @@
     border-radius: 0.5rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6),
       -2px -2px 10px rgba(0, 0, 0, 0.6);
+
+    @include sm-screen {
+      height: 90%;
+      min-height: 85%;
+    }
 
     .hero-content {
       color: $white;
