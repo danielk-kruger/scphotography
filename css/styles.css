@@ -51,7 +51,7 @@ a {
 }
 @media only screen and (max-width: 520px) {
   .navbar {
-    margin-top: 1.25rem;
+    margin-top: 1.625rem;
   }
 }
 .navbar-logo {
@@ -191,8 +191,10 @@ a {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-  animation: slideDown 0.15s;
-  -webkit-animation: slideDown 0.15s;
+  animation: slideDown 0.3s;
+  -webkit-animation: slideDown 0.3s;
+  transform: translateZ(0) translate(0, 0);
+  -webkit-transform: translateZ(0) translate(-50%, 0);
 }
 @keyframes slideDown {
   0% {
@@ -251,17 +253,6 @@ a {
   font-family: "Lato", sans-serif;
   position: relative;
   padding-bottom: 2rem;
-}
-@keyframes plopUp {
-  0% {
-    padding-bottom: 0;
-  }
-  50% {
-    padding-bottom: 4rem;
-  }
-  100% {
-    padding-bottom: 2rem;
-  }
 }
 .navbar.mobile .navbar-menu .navbar-menu__item .navbar-menu__item-link::after {
   content: "";
@@ -332,8 +323,8 @@ a {
   .hero-wrapper {
     width: 95%;
     min-width: 90%;
-    height: 90%;
-    min-height: 85%;
+    height: 88%;
+    min-height: 80%;
     margin-top: 0;
     margin-bottom: 2.625rem;
   }

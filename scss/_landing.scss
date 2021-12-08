@@ -27,7 +27,7 @@
   }
 
   @include sm-screen {
-    margin-top: $m-xsmall;
+    margin-top: $m-small;
   }
 
   &-logo {
@@ -167,8 +167,10 @@
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    animation: slideDown 0.15s;
-    -webkit-animation: slideDown 0.15s;
+    animation: slideDown 0.3s;
+    -webkit-animation: slideDown 0.3s;
+    transform: translateZ(0) translate(0, 0);
+    -webkit-transform: translateZ(0) translate(-50%, 0);
     // animation-delay: 0.1s;
 
     @keyframes slideDown {
@@ -236,22 +238,6 @@
           font-family: $lato;
           position: relative;
           padding-bottom: 2rem;
-          // animation: plopUp 0.8s 0.4s;
-          // -webkit-animation: plopUp 0.8s 0.4s;
-
-          @keyframes plopUp {
-            0% {
-              padding-bottom: 0;
-            }
-
-            50% {
-              padding-bottom: 4rem;
-            }
-
-            100% {
-              padding-bottom: 2rem;
-            }
-          }
 
           &::after {
             content: '';
@@ -334,8 +320,8 @@
     @include sm-screen {
       width: 95%;
       min-width: 90%;
-      height: 90%;
-      min-height: 85%;
+      height: 88%;
+      min-height: 80%;
       margin-top: 0;
       margin-bottom: 2.625rem;
     }
