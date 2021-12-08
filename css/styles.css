@@ -49,6 +49,11 @@ a {
     width: 90%;
   }
 }
+@media only screen and (max-width: 520px) {
+  .navbar {
+    margin-top: 1.25rem;
+  }
+}
 .navbar-logo {
   max-width: 18rem !important;
   margin-top: 10%;
@@ -216,7 +221,7 @@ a {
 }
 @media only screen and (max-width: 520px) {
   .navbar.mobile .toggle-bars {
-    margin-top: 15%;
+    margin-top: 18%;
   }
 }
 .navbar.mobile .toggle-bars .fa-times {
@@ -328,7 +333,9 @@ a {
     width: 95%;
     min-width: 90%;
     height: 90%;
-    min-height: 80%;
+    min-height: 85%;
+    margin-top: 0;
+    margin-bottom: 2.25rem;
   }
 }
 .hero-wrapper .hero-content {
@@ -373,6 +380,17 @@ a {
     text-transform: capitalize;
   }
 }
+@media only screen and (max-width: 1380px) {
+  .hero-wrapper .hero-content h2 {
+    font-size: 4.25rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .hero-wrapper .hero-content h2 {
+    font-size: 3.625rem;
+  }
+}
 @media only screen and (max-width: 520px) {
   .hero-wrapper .hero-content h2 {
     font-size: 2.625rem;
@@ -394,6 +412,7 @@ a {
 @media only screen and (max-width: 1380px) {
   .hero-wrapper .hero-content p {
     width: 80%;
+    font-size: 1.625rem;
   }
 }
 @media only screen and (max-width: 850px) {

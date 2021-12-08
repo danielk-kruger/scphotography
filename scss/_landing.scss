@@ -9,6 +9,7 @@
   justify-content: space-evenly;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  // background-color: #fff;
 
   @include xlg-screen {
     margin-top: $m-wide;
@@ -23,6 +24,10 @@
 
   @include lg-screen {
     width: 90%;
+  }
+
+  @include sm-screen {
+    margin-top: $m-xsmall;
   }
 
   &-logo {
@@ -198,17 +203,13 @@
       }
 
       @include sm-screen {
-        margin-top: 15%;
+        margin-top: 18%;
       }
 
       .fa-times {
         color: $secondary-light;
         font-size: 2.25rem !important;
         // margin-top: 10%;
-
-        @include md-screen {
-          // font-size: 10rem;
-        }
       }
     }
 
@@ -334,7 +335,9 @@
       width: 95%;
       min-width: 90%;
       height: 90%;
-      min-height: 80%;
+      min-height: 85%;
+      margin-top: 0;
+      margin-bottom: 2.25rem;
     }
 
     .hero-content {
@@ -359,13 +362,6 @@
         max-width: 50%;
       }
 
-      // @include md-screen {
-      //   width: 40%;
-      //   max-width: 50%;
-      //   // max-width: 20%;
-      //   // max-width: 50%;
-      // }
-
       h2 {
         font-size: 3rem;
         margin-bottom: $m-wide;
@@ -385,6 +381,15 @@
           margin-bottom: 2rem;
           text-transform: capitalize;
           // margin-top: 4rem;
+        }
+
+        @include lg-screen {
+          font-size: 4.25rem;
+          margin-bottom: 1rem;
+        }
+
+        @include md-screen {
+          font-size: 3.625rem;
         }
 
         @include sm-screen {
@@ -408,6 +413,7 @@
 
         @include lg-screen {
           width: 80%;
+          font-size: 1.625rem;
         }
 
         @include md-screen {
