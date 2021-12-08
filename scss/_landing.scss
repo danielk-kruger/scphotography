@@ -61,6 +61,7 @@
     border-bottom-left-radius: 0.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     animation: slideDown 0.15s;
+    -webkit-animation: slideDown 0.15s;
     // animation-delay: 0.1s;
 
     @keyframes slideDown {
@@ -128,6 +129,7 @@
           position: relative;
           padding-bottom: 2rem;
           animation: plopUp 0.8s;
+          -webkit-animation: plopUp 0.8s;
 
           @keyframes plopUp {
             0% {
