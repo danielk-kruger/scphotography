@@ -323,6 +323,14 @@ a {
     min-height: 85%;
   }
 }
+@media only screen and (max-width: 520px) {
+  .hero-wrapper {
+    width: 95%;
+    min-width: 90%;
+    height: 88%;
+    min-height: 80%;
+  }
+}
 .hero-wrapper .hero-content {
   color: #efefef;
   width: 90%;
