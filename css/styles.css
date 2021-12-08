@@ -133,6 +133,7 @@ a {
 .navbar.mobile .navbar-menu .navbar-menu__item .navbar-menu__item-link {
   color: #efefef;
   font-size: 1.625rem;
+  font-weight: 300;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   position: relative;
