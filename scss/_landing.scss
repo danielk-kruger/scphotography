@@ -53,6 +53,7 @@
     border-bottom-left-radius: 0.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     animation: slideDown 0.15s;
+    // animation-delay: 0.1s;
 
     @keyframes slideDown {
       0% {
@@ -131,7 +132,7 @@
 
 .hero {
   width: $w-max;
-  height: $h-container;
+  height: 100vh;
   background-image: $main-gradient;
   background-size: cover;
   background-position: center;
@@ -148,13 +149,14 @@
   &-wrapper {
     width: 95%;
     min-width: 90%;
-    height: 90%;
+    height: 95%;
     min-height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     // padding-bottom: 10rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     // margin: 0 auto;
     // background: green;

@@ -149,12 +149,13 @@ a {
 .hero-wrapper {
   width: 95%;
   min-width: 90%;
-  height: 90%;
+  height: 95%;
   min-height: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   background-image: url("../images/grayscale-background.jpg");
   background-position: center;
