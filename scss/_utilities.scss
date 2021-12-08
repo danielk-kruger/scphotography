@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Mukta:wght@300;400;600&family=Titillium+Web:ital,wght@0,400;0,600;1,400&display=swap');
+
+// Variables
+
+// Fonts
+$lato: 'Lato', sans-serif;
+$mukta: 'Mukta', sans-serif;
+$titillium: 'Titillium Web', sans-serif;
+
+// Colors
+
+$main-gradient: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+$primary-dark: #330867;
+$primary-light: #30cfd0;
+
+$secondary-gradient: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+$secondary-light: #accbee;
+$light-color: #f8edeb;
+
+$red: rgb(250, 40, 40);
+$green: #52b788;
+
+$gray: #6d6875;
+$white: #efefef;
+$black: #222;
+
+// Spacing
+
+$p-xsmall: 0.625rem;
+$p-small: 1.25rem;
+$p-medium: 1.625rem;
+$p-wide: 2.25rem;
+$p-xwide: 4.25rem;
+$p-section: 3.25rem;
+
+$m-xsmall: 1.25rem;
+$m-small: 1.625rem;
+$m-medium: 2.25rem;
+$m-wide: 3.25rem;
+$m-xwide: 4.25rem;
+$m-section: 8.25rem;
+
+// Width
+$w-fit: fit-content;
+$w-container: 100vw;
+$w-max: 100%;
+$w-wide: 80%;
+$w-half: 60%;
+$w-partial: 30%;
+
+// Height
+$h-fit: fit-content;
+$h-container: 100vh;
+$h-max: 100%;
+$h-wide: 75%;
+$h-half: 50%;
+$h-partial: 25%;
+
+// Breakpoints
+$lg-screen-size: 1380px;
+$md-screen-size: 992px;
+$sm-screen-size: 767px;
+$xs-screen-size: 380px;
+// $xs-screen-size: 480px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  // width: 100%;
+  // height: 100%;
+  overflow-x: hidden;
+  background-color: $white;
+  font-family: $titillium;
+}
+
+button,
+a {
+  font-family: $mukta;
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin Button($colorOne, $colorTwo, $py, $px) {
+  background: $colorOne;
+  border: 2px solid $colorOne;
+  color: $colorTwo;
+  border-radius: 0.5rem;
+  padding: $py $px;
+}
+
+@mixin ButtonGradient($gb, $textColor, $py, $px) {
+  background-image: $gb;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: $textColor;
+  padding: $py $px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+@mixin lg-screen {
+  @media only screen and (max-width: $lg-screen-size) {
+    @content;
+  }
+}
+
+@mixin md-screen {
+  @media only screen and (max-width: $md-screen-size) {
+    @content;
+  }
+}
+
+@mixin sm-screen {
+  @media only screen and (min-width: $sm-screen-size) {
+    @content;
+  }
+}
+
+@mixin xs-screen {
+  @media only screen and (max-width: $xs-screen-size) {
+    @content;
+  }
+}
