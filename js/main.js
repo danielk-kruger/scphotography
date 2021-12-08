@@ -14,10 +14,11 @@ mobileMenu.addEventListener('click', () => {
   }
 });
 
-ScrollReveal().reveal('.hero-content', {
-  distance: '150%',
-  origin: 'bottom',
-  opacity: null,
-  duration: 600,
-  delay: 100,
-});
+// ScrollReveal().reveal('.hero-content', {
+//   distance: '150%',
+//   origin: 'bottom',
+//   opacity: null,
+//   duration: 600,
+//   delay: 100,
+//   reset: true,
+// });
