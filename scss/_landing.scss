@@ -174,7 +174,7 @@
     // -webkit-animation: slideDown ease-in-out 0.35s;
     transform: translate(-50%, 0) translate3d(0, 0, 0);
     -webkit-transform: translate(-50%, 0) translate3d(0, 0, 0);
-    will-change: height;
+    // will-change: height;
     transition: all 0.25s ease-in-out;
     // animation-delay: 0.1s;
 
