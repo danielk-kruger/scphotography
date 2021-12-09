@@ -9,6 +9,7 @@
   justify-content: space-evenly;
   align-items: center;
   transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
   // background-color: #fff;
 
   @include xlg-screen {
@@ -91,6 +92,7 @@
     .fa-bars {
       font-size: 1.825rem !important;
       color: $secondary-light;
+      text-rendering: optimizeLegibility;
     }
   }
 
@@ -167,8 +169,8 @@
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    animation: slideDown 0.35s;
-    -webkit-animation: slideDown 0.35s;
+    animation: slideDown 0.3s;
+    -webkit-animation: slideDown 0.3s;
     transform: translateZ(0) translate(0, 0);
     -webkit-transform: translateZ(0) translate(-50%, 0);
     // transition: all 0.3s ease-in-out;
@@ -216,6 +218,7 @@
       .fa-times {
         color: $secondary-light;
         font-size: 2.25rem !important;
+        text-rendering: optimizeLegibility;
         // margin-top: 10%;
       }
     }
