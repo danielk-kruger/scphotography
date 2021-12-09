@@ -13,9 +13,9 @@ const gridItemsArr = [...gridItems];
 AOS.init({
   useClassNames: false,
   easing: 'ease',
-  duration: 1000,
+  duration: 500,
   once: false,
-  offset: 200,
+  offset: -80,
   anchorPlacement: 'top-center',
 });
 

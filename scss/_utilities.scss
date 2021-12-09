@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Mukta:wght@300;400;600&family=Titillium+Web:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Titillium+Web:wght@400;600&display=swap');
 
 // Variables
 
 // Fonts
 $lato: 'Lato', sans-serif;
-$mukta: 'Mukta', sans-serif;
+// $mukta: 'Mukta', sans-serif;
 $titillium: 'Titillium Web', sans-serif;
 
 // Colors
@@ -83,7 +83,7 @@ body {
 
 button,
 a {
-  font-family: $mukta;
+  font-family: $lato;
 }
 
 a {

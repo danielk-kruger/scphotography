@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: $m-xwide;
+  padding-bottom: $m-section;
 
   input {
     display: none;
@@ -49,7 +49,7 @@
   }
 
   .grid {
-    margin-top: $m-xwide;
+    // margin-top: $m-xwide auto 0 auto;
     width: 100%;
     margin: 0 auto;
 
