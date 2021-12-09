@@ -11,11 +11,9 @@ const gridItems = document.querySelector('.grid').children;
 const gridItemsArr = [...gridItems];
 
 AOS.init({
-  startEvent: 'DOMContentLoaded',
   useClassNames: false,
   easing: 'ease',
   duration: 1000,
-  mirror: false,
   once: false,
   offset: 200,
 });
