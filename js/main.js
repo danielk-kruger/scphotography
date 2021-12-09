@@ -1,3 +1,27 @@
+window.addEventListener('DOMContentLoaded', function () {
+  const masonry = new Masonry('.grid', {
+    itemSelector: '.grid-item',
+    gutter: 5,
+    fitWidth: true,
+    transitionDuration: 0,
+  });
+});
+
+const gridItems = document.querySelector('.grid').children;
+const gridItemsArr = [...gridItems];
+
+AOS.init({
+  startEvent: 'DOMContentLoaded',
+  useClassNames: false,
+  easing: 'ease',
+  duration: 800,
+  mirror: false,
+  once: false,
+  offset: 200,
+});
+
+AOS.refresh();
+
 const nav = document.querySelector('.navbar');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -13,12 +37,3 @@ mobileMenu.addEventListener('click', () => {
     icon.classList.add('fa-bars');
   }
 });
-
-// ScrollReveal().reveal('.hero-content', {
-//   distance: '150%',
-//   origin: 'bottom',
-//   opacity: null,
-//   duration: 600,
-//   delay: 100,
-//   reset: true,
-// });
