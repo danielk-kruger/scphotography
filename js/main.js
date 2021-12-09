@@ -13,7 +13,7 @@ AOS.init({
   easing: 'ease',
   duration: 300,
   once: false,
-  offset: -120,
+  offset: -180,
   anchorPlacement: 'top-center',
 });
 
