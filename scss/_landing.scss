@@ -172,10 +172,10 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     // animation: slideDown ease-in-out 0.35s;
     // -webkit-animation: slideDown ease-in-out 0.35s;
-    transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
-    -webkit-transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
+    transform: translate(-50%, 0) translate3d(0, 0, 0);
+    -webkit-transform: translate(-50%, 0) translate3d(0, 0, 0);
     will-change: height;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.25s ease-in-out;
     // animation-delay: 0.1s;
 
     // @keyframes slideDown {
@@ -187,6 +187,12 @@
     //     top: 0px;
     //   }
     // }
+
+    ~ {
+      body {
+        overflow: hidden;
+      }
+    }
 
     .navbar-logo {
       margin-top: -3.2rem;
