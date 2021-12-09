@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const masonry = new Masonry('.grid', {
     itemSelector: '.grid-item',
     gutter: 5,
+    horizontalOrder: true,
     fitWidth: true,
     transitionDuration: 0,
   });
@@ -19,7 +20,7 @@ AOS.init({
   anchorPlacement: 'top-center',
 });
 
-AOS.refresh();
+// AOS.refresh();
 
 const nav = document.querySelector('.navbar');
 const mobileMenu = document.getElementById('mobileMenu');
