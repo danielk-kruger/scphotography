@@ -16,6 +16,7 @@ AOS.init({
   duration: 1000,
   once: false,
   offset: 200,
+  anchorPlacement: 'top-center',
 });
 
 AOS.refresh();
