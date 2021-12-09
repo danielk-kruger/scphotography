@@ -8,21 +8,20 @@ window.onload = () => {
   });
 };
 
-const gridItems = document.querySelector('.grid').children;
-const gridItemsArr = [...gridItems];
-
 AOS.init({
   useClassNames: false,
   easing: 'ease',
   duration: 400,
   once: false,
-  offset: -40,
+  offset: -60,
   anchorPlacement: 'top-center',
 });
 
-if (window.innerWidth >= 425) {
-  document.querySelector('.grid-item').setAttribute('data-aos-offset', '-80');
-}
+// if (window.innerWidth >= 425) {
+//   document.querySelector('.grid-item').setAttribute('data-aos-offset', '-80');
+// } else {
+//   document.querySelector('.grid-item').setAttribute('data-aos-offset', '-100');
+// }
 
 // AOS.refresh();
 
