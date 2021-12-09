@@ -170,23 +170,23 @@
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    animation: slideDown ease-in-out 0.35s;
-    -webkit-animation: slideDown ease-in-out 0.35s;
+    // animation: slideDown ease-in-out 0.35s;
+    // -webkit-animation: slideDown ease-in-out 0.35s;
     transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
     -webkit-transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
-    will-change: top;
-    // transition: all 0.3s ease-in-out;
+    will-change: height;
+    transition: all 0.35s ease-in-out;
     // animation-delay: 0.1s;
 
-    @keyframes slideDown {
-      0% {
-        top: -1000px;
-      }
+    // @keyframes slideDown {
+    //   0% {
+    //     top: -1000px;
+    //   }
 
-      100% {
-        top: 0px;
-      }
-    }
+    //   100% {
+    //     top: 0px;
+    //   }
+    // }
 
     .navbar-logo {
       margin-top: -3.2rem;
