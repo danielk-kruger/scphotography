@@ -11,9 +11,9 @@ window.onload = () => {
 AOS.init({
   useClassNames: false,
   easing: 'ease',
-  duration: 400,
+  duration: 300,
   once: false,
-  offset: -100,
+  offset: -120,
   anchorPlacement: 'top-center',
 });
 
