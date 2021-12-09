@@ -14,11 +14,15 @@ const gridItemsArr = [...gridItems];
 AOS.init({
   useClassNames: false,
   easing: 'ease',
-  duration: 500,
+  duration: 400,
   once: false,
-  offset: -80,
+  offset: -40,
   anchorPlacement: 'top-center',
 });
+
+if (window.innerWidth >= 425) {
+  document.querySelector('.grid-item').setAttribute('data-aos-offset', '-60');
+}
 
 // AOS.refresh();
 
