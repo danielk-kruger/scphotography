@@ -195,17 +195,14 @@ a {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-  animation: slideDown 0.3s;
-  -webkit-animation: slideDown 0.3s;
+  animation: slideDown ease-in-out 0.35s;
+  -webkit-animation: slideDown ease-in-out 0.35s;
   transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
   -webkit-transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
   will-change: top;
 }
 @keyframes slideDown {
   0% {
-    top: 0px;
-  }
-  50% {
     top: -1000px;
   }
   100% {
