@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.onload = () => {
   const masonry = new Masonry('.grid', {
     itemSelector: '.grid-item',
     gutter: 5,
@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     fitWidth: true,
     transitionDuration: 0,
   });
-});
+};
 
 const gridItems = document.querySelector('.grid').children;
 const gridItemsArr = [...gridItems];
@@ -21,7 +21,7 @@ AOS.init({
 });
 
 if (window.innerWidth >= 425) {
-  document.querySelector('.grid-item').setAttribute('data-aos-offset', '-60');
+  document.querySelector('.grid-item').setAttribute('data-aos-offset', '-80');
 }
 
 // AOS.refresh();
