@@ -14,7 +14,7 @@ AOS.init({
   startEvent: 'DOMContentLoaded',
   useClassNames: false,
   easing: 'ease',
-  duration: 800,
+  duration: 1000,
   mirror: false,
   once: false,
   offset: 200,

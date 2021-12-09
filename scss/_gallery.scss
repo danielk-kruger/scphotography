@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: $m-section;
+  padding-bottom: $m-xwide;
 
   input {
     display: none;
@@ -14,7 +14,7 @@
 
   &-heading {
     text-align: center;
-    padding-top: $m-section;
+    padding-top: $m-xwide;
     padding-bottom: $m-xwide;
 
     h2 {

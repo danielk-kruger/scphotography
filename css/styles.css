@@ -11,6 +11,7 @@ body {
   min-height: 100%;
   background-color: #efefef;
   font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
 }
 
 button,
@@ -462,14 +463,14 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 10.25rem;
+  padding-bottom: 4.25rem;
 }
 .gallery input {
   display: none;
 }
 .gallery-heading {
   text-align: center;
-  padding-top: 10.25rem;
+  padding-top: 4.25rem;
   padding-bottom: 4.25rem;
 }
 .gallery-heading h2 {
