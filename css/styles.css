@@ -74,7 +74,7 @@ a {
 }
 @media only screen and (max-width: 520px) {
   .navbar-logo {
-    margin-right: 15%;
+    margin-right: 15vw;
   }
 }
 .navbar-logo img {
@@ -196,8 +196,9 @@ a {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   animation: slideDown 0.3s;
   -webkit-animation: slideDown 0.3s;
-  transform: translateZ(0) translate(0, 0);
-  -webkit-transform: translateZ(0) translate(-50%, 0);
+  transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0) translate(-50%, 0) translate3d(0, 0, 0);
+  will-change: top;
 }
 @keyframes slideDown {
   0% {
@@ -221,6 +222,7 @@ a {
   top: 0;
   z-index: 99;
   display: block;
+  text-rendering: optimizeLegibility;
 }
 @media only screen and (max-width: 850px) {
   .navbar.mobile .toggle-bars {
@@ -234,7 +236,7 @@ a {
 }
 .navbar.mobile .toggle-bars .fa-times {
   color: #accbee;
-  font-size: 2.25rem !important;
+  font-size: 2.25rem;
   text-rendering: optimizeLegibility;
 }
 .navbar.mobile .navbar-menu {
