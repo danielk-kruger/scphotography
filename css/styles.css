@@ -32,8 +32,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  transition: all 0.25s linear;
-  -webkit-transition: all 0.25s linear;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   will-change: height;
   transform: translateZ(0);
 }
@@ -109,8 +109,8 @@ a {
   transform: translateX(-40px);
   z-index: 99;
   cursor: pointer;
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 }
 @media only screen and (max-width: 2000px) {
   .navbar .toggle-bars {
@@ -160,7 +160,7 @@ a {
     font-family: "Lato", sans-serif;
     padding: 0.625rem 2.25rem;
     position: relative;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.3s linear;
   }
   .navbar-menu__item-link:hover {
     color: #accbee;
@@ -176,7 +176,7 @@ a {
     left: 50%;
     display: block;
     transform: translateX(-50%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
   }
   .navbar-menu__item-link:hover::after {
     width: 50px;
@@ -204,8 +204,8 @@ a {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   transform: translate(-50%, 0) translateZ(0);
   -webkit-transform: translate(-50%, 0);
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 }
 .navbar.mobile .navbar-logo {
   margin-top: -3.2rem;
@@ -449,7 +449,7 @@ a {
 }
 @media only screen and (max-width: 520px) {
   .hero-wrapper .hero-content .content-btn {
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
   }
 }

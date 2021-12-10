@@ -63,6 +63,12 @@ $lg-screen-size: 1380px;
 $md-screen-size: 850px;
 $sm-screen-size: 520px;
 
+// transitions
+$no-ease: all 0.3s;
+$fast-transition: all 0.2s ease;
+$medium-transition: all 0.3s linear;
+$slow-transition: all 0.4s ease-in-out;
+
 * {
   margin: 0;
   padding: 0;
