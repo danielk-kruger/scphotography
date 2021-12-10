@@ -10,6 +10,7 @@
   align-items: center;
   transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
+
   // background-color: #fff;
 
   @include xlg-screen {
@@ -32,8 +33,9 @@
   }
 
   &-logo {
-    max-width: 18rem !important;
-    margin-top: 10%;
+    max-width: 10rem !important;
+    // height: 10rem;
+    // margin-top: 10%;
 
     @include xlg-screen {
       max-width: $w-wide;
@@ -46,7 +48,9 @@
     }
 
     @include sm-screen {
-      margin-right: 15vw;
+      // margin-right: 15vw;
+      transform: translateX(40px);
+      // background-color: blue;
     }
 
     img {
@@ -66,15 +70,20 @@
       @include md-screen {
         transform: scale(1);
       }
+
+      @include sm-screen {
+        transform: scale(1.4);
+      }
     }
   }
 
   .toggle-bars {
-    position: absolute;
-    margin-left: 75%;
+    position: relative;
+    // margin-left: ;
+    transform: translateX(-40px);
     z-index: 99;
     cursor: pointer;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.3s ease;
 
     @include xlg-screen {
       display: none;
@@ -86,7 +95,8 @@
 
     @include sm-screen {
       // margin-top: 5%;
-      margin-left: 80%;
+      // margin-left: 320px;
+      transform: translateX(-20px);
     }
 
     .fa-bars {
@@ -144,7 +154,7 @@
           }
 
           &:hover::after {
-            width: 40%;
+            width: 50px;
             background: $secondary-light;
           }
         }
@@ -170,26 +180,13 @@
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    // animation: slideDown ease-in-out 0.35s;
-    // -webkit-animation: slideDown ease-in-out 0.35s;
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
-    // will-change: height;
     transition: all 0.25s ease;
-    // animation-delay: 0.1s;
-
-    // @keyframes slideDown {
-    //   0% {
-    //     top: -1000px;
-    //   }
-
-    //   100% {
-    //     top: 0px;
-    //   }
-    // }
 
     .navbar-logo {
       margin-top: -3.2rem;
+      transform: translateX(-60px) translateY(60px);
       // width: $w-half;
 
       img {
@@ -203,15 +200,15 @@
       top: 0;
       z-index: 99;
       display: block;
-      text-rendering: optimizeLegibility;
 
       @include md-screen {
         // top: -7%;
-        margin-top: 10%;
+        // margin-top: 10%;
+        transform: translateY(75px) translateX(250px);
       }
 
       @include sm-screen {
-        margin-top: 18%;
+        transform: translateY(75px) translateX(140px);
       }
 
       .fa-times {
@@ -299,6 +296,8 @@
     // padding-bottom: 10rem;
     // margin-top: 1rem;
     margin-bottom: 2.25rem;
+    // margin-right: 2rem;
+    // margin-left: 2rem;
     z-index: 2;
     // margin: auto;
     // margin: 0 auto;
@@ -325,8 +324,8 @@
     }
 
     @include sm-screen {
-      width: 95%;
-      min-width: 90%;
+      width: 90%;
+      min-width: 88%;
       height: 88%;
       min-height: 80%;
       margin-top: 0;
