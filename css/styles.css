@@ -160,7 +160,7 @@ a {
     font-family: "Lato", sans-serif;
     padding: 0.625rem 2.25rem;
     position: relative;
-    transition: all 0.3s linear;
+    transition: all 0.35s ease-in-out;
   }
   .navbar-menu__item-link:hover {
     color: #accbee;
@@ -176,7 +176,7 @@ a {
     left: 50%;
     display: block;
     transform: translateX(-50%);
-    transition: all 0.3s linear;
+    transition: all 0.35s ease-in-out;
   }
   .navbar-menu__item-link:hover::after {
     width: 50px;
