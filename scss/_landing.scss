@@ -274,6 +274,7 @@
   width: $w-max;
   height: 100vh;
   background-image: $main-gradient;
+  background-position: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +285,6 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  // margin: 0 auto;
 
   &-wrapper {
     width: 95%;
@@ -295,15 +295,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    // padding-bottom: 10rem;
-    // margin-top: 1rem;
     margin-bottom: 2.25rem;
-    // margin-right: 2rem;
-    // margin-left: 2rem;
     z-index: 2;
-    // margin: auto;
-    // margin: 0 auto;
-    // background: green;
     background-image: url('../images/grayscale-background.jpg');
     background-position: center;
     background-size: cover;
@@ -338,7 +331,6 @@
       color: $white;
       width: 90%;
       min-width: 85%;
-      // background-color: black;
 
       @include xlg-screen {
         width: 30%;
@@ -348,7 +340,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // background-color: blue;
       }
 
       @include lg-screen {

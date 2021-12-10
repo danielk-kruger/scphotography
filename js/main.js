@@ -6,6 +6,11 @@ window.onload = () => {
     fitWidth: true,
     transitionDuration: 0,
   });
+
+  if (window.innerWidth >= 1024) {
+    masonry.gutter = 2;
+    masonry.horizontalOrder = false;
+  }
 };
 
 AOS.init({
@@ -16,6 +21,12 @@ AOS.init({
   offset: -200,
   anchorPlacement: 'top-center',
 });
+
+if (window.innerWidth >= 1024) {
+  AOS.init({
+    offset: -220,
+  });
+}
 
 // if (window.innerWidth >= 425) {
 //   document.querySelector('.grid-item').setAttribute('data-aos-offset', '-80');
