@@ -8,7 +8,7 @@ window.onload = () => {
   });
 
   if (window.innerWidth >= 1024) {
-    masonry.gutter = 2;
+    masonry.gutter = 1;
     masonry.horizontalOrder = false;
   }
 };
@@ -24,17 +24,9 @@ AOS.init({
 
 if (window.innerWidth >= 1024) {
   AOS.init({
-    offset: -220,
+    offset: -210,
   });
 }
-
-// if (window.innerWidth >= 425) {
-//   document.querySelector('.grid-item').setAttribute('data-aos-offset', '-80');
-// } else {
-//   document.querySelector('.grid-item').setAttribute('data-aos-offset', '-100');
-// }
-
-// AOS.refresh();
 
 const nav = document.querySelector('.navbar');
 const mobileMenu = document.getElementById('mobileMenu');

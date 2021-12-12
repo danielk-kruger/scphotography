@@ -16,29 +16,25 @@
     padding-top: $m-xwide;
     padding-bottom: $m-xwide;
 
+    @include xlg-screen {
+      padding-top: $p-section;
+    }
+
     h2 {
       font-family: $lato;
       text-transform: capitalize;
       position: relative;
       padding-bottom: $p-wide;
 
-      &::after {
-        content: '';
-        height: 1px;
-        width: 0px;
-        border-radius: 1rem;
-        background: $black;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        display: block;
-        transform: translateX(-50%);
+      @include xlg-screen {
+        font-size: 2.25rem;
       }
     }
 
     label {
       text-transform: capitalize;
       font-size: 1rem;
+      cursor: pointer;
 
       &:first-child,
       &:nth-child(2) {
@@ -48,13 +44,8 @@
   }
 
   .grid {
-    // margin-top: $m-xwide auto 0 auto;
     width: 100%;
     margin: 0 auto;
-
-    // @include xlg-screen {
-    //   width: 80%;
-    // }
 
     &-item {
       border-radius: 0.5rem;

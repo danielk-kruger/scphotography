@@ -472,27 +472,26 @@ a {
   padding-top: 4.25rem;
   padding-bottom: 4.25rem;
 }
+@media only screen and (max-width: 2000px) {
+  .gallery-heading {
+    padding-top: 3.25rem;
+  }
+}
 .gallery-heading h2 {
   font-family: "Lato", sans-serif;
   text-transform: capitalize;
   position: relative;
   padding-bottom: 2.25rem;
 }
-.gallery-heading h2::after {
-  content: "";
-  height: 1px;
-  width: 0px;
-  border-radius: 1rem;
-  background: #222;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  display: block;
-  transform: translateX(-50%);
+@media only screen and (max-width: 2000px) {
+  .gallery-heading h2 {
+    font-size: 2.25rem;
+  }
 }
 .gallery-heading label {
   text-transform: capitalize;
   font-size: 1rem;
+  cursor: pointer;
 }
 .gallery-heading label:first-child, .gallery-heading label:nth-child(2) {
   padding-right: 1.25rem;
