@@ -931,6 +931,7 @@ a {
 @media only screen and (max-width: 520px) {
   #about .about-content__item.colspan .creator .overlay-content p {
     font-size: 1.1rem;
+    line-height: initial;
   }
 }
 #about .about-content__item.colspan .creator .overlay-content span.cell {

@@ -27,6 +27,7 @@
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       margin: 0;
+      // padding-top: 4rem;
     }
 
     &__item {
@@ -408,6 +409,7 @@
 
                 @include sm-screen {
                   font-size: 1.1rem;
+                  line-height: initial;
                 }
               }
 
