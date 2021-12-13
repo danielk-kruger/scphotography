@@ -18,7 +18,6 @@
     justify-content: space-between;
     width: 80%;
     top: 0;
-    // background: green;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
@@ -34,11 +33,8 @@
 
   &-logo {
     max-width: 10rem !important;
-    // height: 10rem;
-    // margin-top: 10%;
 
     @include xlg-screen {
-      max-width: $w-wide;
       margin: 0;
       padding-left: calc($p-xwide + 4rem);
     }
@@ -48,9 +44,7 @@
     }
 
     @include sm-screen {
-      // margin-right: 15vw;
       transform: translateX(40px);
-      // background-color: blue;
     }
 
     img {
@@ -60,11 +54,11 @@
       height: 100%;
 
       @include xlg-screen {
-        transform: scale(1.8);
+        transform: scale(12);
       }
 
       @include lg-screen {
-        transform: scale(1.2);
+        transform: scale(1.6);
       }
 
       @include md-screen {
@@ -79,7 +73,6 @@
 
   .toggle-bars {
     position: relative;
-    // margin-left: ;
     transform: translateX(-40px);
     z-index: 99;
     cursor: pointer;
@@ -95,8 +88,6 @@
     }
 
     @include sm-screen {
-      // margin-top: 5%;
-      // margin-left: 320px;
       transform: translateX(-20px);
     }
 
@@ -189,11 +180,9 @@
     .navbar-logo {
       margin-top: -3.2rem;
       transform: translateX(-60px) translateY(60px);
-      // width: $w-half;
 
       img {
         display: block;
-        // width: 100%;
       }
     }
 
@@ -204,8 +193,6 @@
       display: block;
 
       @include md-screen {
-        // top: -7%;
-        // margin-top: 10%;
         transform: translateY(75px) translateX(250px);
       }
 
@@ -217,7 +204,6 @@
         color: $secondary-light;
         font-size: 2.25rem;
         text-rendering: optimizeLegibility;
-        // margin-top: 10%;
       }
     }
 
@@ -359,13 +345,11 @@
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
-        // width: 100%;
 
         @include xlg-screen {
           font-size: 4.625rem;
           margin-bottom: 2rem;
           text-transform: capitalize;
-          // margin-top: 4rem;
         }
 
         @include lg-screen {
@@ -390,10 +374,9 @@
           font-size: 1.825rem;
           width: 50%;
           line-height: 42px;
-          // background-color: blue;
+
           padding-bottom: $p-xsmall;
           margin-top: 2rem;
-          // line-height: 50px;
         }
 
         @include lg-screen {

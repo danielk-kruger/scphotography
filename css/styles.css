@@ -63,7 +63,6 @@ a {
 }
 @media only screen and (max-width: 2000px) {
   .navbar-logo {
-    max-width: 80%;
     margin: 0;
     padding-left: 8.25rem;
   }
@@ -86,12 +85,12 @@ a {
 }
 @media only screen and (max-width: 2000px) {
   .navbar-logo img {
-    transform: scale(1.8);
+    transform: scale(12);
   }
 }
 @media only screen and (max-width: 1380px) {
   .navbar-logo img {
-    transform: scale(1.2);
+    transform: scale(1.6);
   }
 }
 @media only screen and (max-width: 850px) {
