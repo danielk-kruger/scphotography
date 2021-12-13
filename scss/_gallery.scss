@@ -1,47 +1,12 @@
 .gallery {
   height: fit-content;
   width: 100%;
-  background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to bottom, #30cfd0 0%, $light-gray 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: $m-section;
-
-  input {
-    display: none;
-  }
-
-  &-heading {
-    text-align: center;
-    padding-top: $m-xwide;
-    padding-bottom: $m-xwide;
-
-    @include xlg-screen {
-      padding-top: $p-section;
-    }
-
-    h2 {
-      font-family: $lato;
-      text-transform: capitalize;
-      position: relative;
-      padding-bottom: $p-wide;
-
-      @include xlg-screen {
-        font-size: 2.25rem;
-      }
-    }
-
-    label {
-      text-transform: capitalize;
-      font-size: 1rem;
-      cursor: pointer;
-
-      &:first-child,
-      &:nth-child(2) {
-        padding-right: $p-small;
-      }
-    }
-  }
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 
   .grid {
     width: 100%;
@@ -65,7 +30,6 @@
       &.width2 {
         @include xlg-screen {
           width: 30%;
-          // margin: auto;
         }
 
         @include md-screen {

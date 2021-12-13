@@ -139,8 +139,10 @@ a {
   }
 }
 
-// @mixin xs-screen {
-//   @media only screen and (max-width: $xs-screen-size) {
-//     @content;
-//   }
-// }
+@mixin overLay($opacity) {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, $opacity);
+  top: 0;
+}

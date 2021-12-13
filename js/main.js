@@ -18,7 +18,7 @@ AOS.init({
   easing: 'ease-in-out',
   duration: 400,
   once: false,
-  offset: -200,
+  offset: -205,
   anchorPlacement: 'top-center',
 });
 
@@ -41,5 +41,21 @@ mobileMenu.addEventListener('click', () => {
   } else {
     icon.classList.remove('fa-times');
     icon.classList.add('fa-bars');
+  }
+});
+
+const authorContent = document.querySelectorAll('.creator');
+
+window.addEventListener('DOMContentLoaded', () => {
+  let index = 0;
+  const slides = authorContent;
+  const classHide = 'hide',
+    count = slides.length;
+  nextSlide();
+
+  function nextSlide() {
+    slides[index++ % count].classList.add(classHide);
+    slides[index % count].classList.remove(classHide);
+    setTimeout(nextSlide, 8000);
   }
 });
