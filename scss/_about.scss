@@ -5,6 +5,8 @@
   height: fit-content;
   width: 100%;
   margin: 0 auto;
+  // background: green;
+  // padding-bottom: 6.25rem;
 
   .about-content {
     display: grid;
@@ -15,6 +17,18 @@
     justify-content: center;
     align-items: center;
 
+    @include md-screen {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    @include sm-screen {
+      height: 200vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin: 0;
+    }
+
     &__item {
       width: 100%;
       height: 100%;
@@ -24,10 +38,20 @@
       // Top Right
 
       &:last-child {
-        // background: blue;
         grid-column: 2;
         grid-row: 1 / 2;
         position: relative;
+
+        // Bottom left
+        @include md-screen {
+          grid-column: 1 / span 2;
+          grid-row: 4 / span 5;
+        }
+
+        @include sm-screen {
+          grid-column: auto;
+          grid-row: auto;
+        }
 
         .services {
           height: 100%;
@@ -45,17 +69,29 @@
             @include overLay(0.6);
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             color: $white;
-            // text-align: left;
+
+            @include sm-screen {
+              justify-content: space-evenly;
+            }
 
             &__header {
               text-align: center;
 
+              @include lg-screen {
+                width: 80%;
+              }
+
+              @include sm-screen {
+                width: 90%;
+              }
+
               h2 {
-                font-size: 3.25rem;
-                font-weight: 600;
+                font-family: $lato;
+                font-size: 3rem;
+                font-weight: 300;
                 text-transform: capitalize;
                 background-image: $secondary-gradient;
                 background-size: 100%;
@@ -63,25 +99,76 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
+                @include lg-screen {
+                  font-size: 2.825rem;
+                }
+
+                @include md-screen {
+                  font-size: 2rem;
+                  padding-top: 4rem;
+                }
+
+                @include sm-screen {
+                  padding-top: 2rem;
+                }
               }
             }
 
             &__text {
-              width: 100%;
+              width: 80%;
               display: flex;
+              margin: auto;
+
+              @include lg-screen {
+                width: 100%;
+                padding: 1.25rem;
+              }
+
+              @include md-screen {
+                width: 100%;
+              }
+
+              @include sm-screen {
+                width: 90%;
+              }
 
               ul {
                 display: block;
-                margin: 0 auto;
-                // padding-top: $p-xwide;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                padding-bottom: $p-xwide;
+                width: 100%;
+                // margin: auto;
+
+                @include md-screen {
+                  width: 80%;
+                  grid-template-columns: 1fr;
+                }
+
+                @include sm-screen {
+                  width: 100%;
+                  padding-bottom: $p-medium;
+                }
 
                 li {
                   font-size: 1.625rem;
-                  line-height: 30px;
-                  // padding: 1rem;
                   margin: 1rem 2rem;
+                  justify-self: center;
+
+                  @include lg-screen {
+                    font-size: 1.25rem;
+                    margin: 0.625rem 1.425rem;
+                  }
+
+                  @include md-screen {
+                    font-size: 1rem;
+                    margin: 0.425rem 0;
+                  }
+
+                  @include sm-screen {
+                    font-size: 1.25rem;
+                  }
                 }
               }
             }
@@ -95,6 +182,16 @@
         grid-column: 2;
         grid-row: 2 / 3;
         position: relative;
+
+        @include md-screen {
+          grid-column: 3 / span 4;
+          grid-row: 4 / span 5;
+        }
+
+        @include sm-screen {
+          grid-column: auto;
+          grid-row: auto;
+        }
 
         .equip {
           height: 100%;
@@ -123,9 +220,14 @@
               text-align: center;
               width: 80%;
 
+              @include sm-screen {
+                width: 90%;
+              }
+
               h2 {
+                font-family: $lato;
                 font-size: 3rem;
-                font-weight: 600;
+                font-weight: 300;
                 text-transform: capitalize;
                 background-image: $secondary-gradient;
                 background-size: 100%;
@@ -133,6 +235,14 @@
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
+                @include lg-screen {
+                  font-size: 2.25rem;
+                }
+
+                @include md-screen {
+                  font-size: 2rem;
+                }
               }
             }
 
@@ -141,12 +251,36 @@
               text-align: center;
               padding-bottom: $p-xwide;
 
+              @include md-screen {
+                padding-bottom: $p-small;
+              }
+
+              @include sm-screen {
+                width: 90%;
+              }
+
               p {
                 font-size: 1.25rem;
                 font-weight: normal;
                 line-height: 30px;
                 width: 75%;
                 margin: 0 auto;
+
+                @include lg-screen {
+                  width: 100%;
+                  font-size: 1.15rem;
+                }
+
+                @include md-screen {
+                  font-size: 1rem;
+                  line-height: initial;
+                  width: 90%;
+                }
+
+                @include sm-screen {
+                  width: 100%;
+                  font-size: 1.1rem;
+                }
               }
 
               a {
@@ -154,11 +288,13 @@
                 color: $primary-light;
                 display: block;
                 padding-top: $p-xsmall;
-                // padding-bottom: $p-wide;
-                // padding-top: 1rem;
 
                 &:hover {
                   text-decoration: underline;
+                }
+
+                @include sm-screen {
+                  padding-top: $p-small;
                 }
               }
             }
@@ -169,8 +305,20 @@
       // Left Large
 
       &.colspan {
-        grid-column: 1;
+        grid-column: auto;
         grid-row: 1 / span 2;
+        // height: 100%;
+
+        @include md-screen {
+          grid-column: 1 / span 4;
+          grid-row: 1 / 4;
+        }
+
+        @include sm-screen {
+          grid-column: auto;
+          grid-row: 1 / span 2;
+          // height: 100%;
+        }
 
         .creator {
           height: 100%;
@@ -190,6 +338,15 @@
             justify-content: space-between;
             align-items: center;
             z-index: 1;
+            // height: 100%;
+
+            @include md-screen {
+              justify-content: space-evenly;
+            }
+
+            @include sm-screen {
+              justify-content: space-between;
+            }
 
             .lead {
               font-size: 4.25rem;
@@ -202,6 +359,14 @@
               background-clip: text;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
+
+              @include lg-screen {
+                font-size: 4rem;
+              }
+
+              @include md-screen {
+                font-size: 3.25rem;
+              }
             }
 
             &-content {
@@ -215,33 +380,61 @@
               margin: auto;
               z-index: 2;
 
+              @include md-screen {
+                padding-top: 3rem;
+              }
+
+              @include sm-screen {
+                width: 80%;
+              }
+
               h2 {
                 font-size: 3.25rem;
                 font-weight: 600;
+
+                @include md-screen {
+                  font-size: 2.425rem;
+                }
+
+                @include sm-screen {
+                  font-size: 3rem;
+                }
               }
 
               p {
                 font-size: 1.25rem;
                 font-weight: normal;
                 line-height: 30px;
+
+                @include sm-screen {
+                  font-size: 1.1rem;
+                }
               }
 
               span.cell {
                 font-size: 1rem;
                 display: block;
                 padding: 2rem 0 0.425rem;
+
+                @include md-screen {
+                  padding: 1.25rem 0 0.425rem;
+                }
               }
 
               .socials {
-                padding-top: 0.425rem;
+                padding-top: 0.825rem;
 
                 a {
                   font-size: 2.25rem;
                   color: $white;
                   transition: $medium-transition;
 
+                  @include sm-screen {
+                    font-size: 3rem;
+                  }
+
                   &:not(:last-child) {
-                    padding-right: 1rem;
+                    padding-right: 1.825rem;
                   }
 
                   &.fb:hover {
@@ -265,6 +458,24 @@
             object-position: center;
             height: 100%;
             width: 100%;
+
+            @include md-screen {
+              object-position: center -300px;
+            }
+
+            @include sm-screen {
+              object-position: center;
+            }
+
+            &.fady {
+              @include md-screen {
+                object-position: center -180px;
+              }
+
+              @include sm-screen {
+                object-position: center;
+              }
+            }
           }
         }
       }

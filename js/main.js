@@ -28,6 +28,7 @@ if (window.innerWidth >= 1024) {
   });
 }
 
+const navMenu = document.querySelector('.navbar-menu');
 const nav = document.querySelector('.navbar');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -58,4 +59,24 @@ window.addEventListener('DOMContentLoaded', () => {
     slides[index % count].classList.remove(classHide);
     setTimeout(nextSlide, 8000);
   }
+
+  // Close the mobile menu when clicking the links
+
+  navMenu.addEventListener('click', () => {
+    const mobileIsActive = document.querySelector('.navbar.mobile');
+
+    if (window.innerWidth <= 820 && mobileIsActive) {
+      // nav.classList.toggle('mobile');
+      const icon = mobileMenu.querySelector('i');
+      nav.classList.toggle('mobile');
+
+      if (nav.classList.contains('mobile')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    }
+  });
 });
