@@ -456,8 +456,8 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
 }
 .gallery .grid {
   width: 100%;
@@ -610,6 +610,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-top: 4rem;
 }
 @media only screen and (max-width: 1380px) {
   #about .about-content__item:last-child .services-content__header h2 {
@@ -619,7 +620,6 @@ a {
 @media only screen and (max-width: 850px) {
   #about .about-content__item:last-child .services-content__header h2 {
     font-size: 2rem;
-    padding-top: 4rem;
   }
 }
 @media only screen and (max-width: 520px) {

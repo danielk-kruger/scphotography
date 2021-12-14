@@ -5,8 +5,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
 
   .grid {
     width: 100%;
@@ -19,6 +19,7 @@
 
       @include xlg-screen {
         width: 15%;
+        // height: auto;
         // margin: 1px;
         // margin: 5px;
       }
