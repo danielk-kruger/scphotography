@@ -82,8 +82,8 @@
     transform: translateX(-40px) translate3d(0, 0, 0);
     z-index: 99;
     cursor: pointer;
-    transition: $medium-transition;
-    -webkit-transition: $medium-transition;
+    // transition: $medium-transition;
+    // -webkit-transition: $medium-transition;
 
     @include xlg-screen {
       display: none;
@@ -135,7 +135,7 @@
           font-family: $lato;
           padding: $p-xsmall $p-wide;
           position: relative;
-          transition: $medium-transition;
+          transition: $fast-transition;
 
           &:hover {
             color: $secondary-light;
@@ -184,8 +184,8 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     transform: translate(-50%, 0) translateZ(0);
     -webkit-transform: translate(-50%, 0);
-    transition: $medium-transition;
-    -webkit-transition: $medium-transition;
+    transition: $fast-transition;
+    -webkit-transition: $fast-transition;
 
     .navbar-logo {
       margin-top: -3.2rem;

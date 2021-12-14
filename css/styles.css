@@ -110,8 +110,6 @@ a {
   transform: translateX(-40px) translate3d(0, 0, 0);
   z-index: 99;
   cursor: pointer;
-  transition: all 0.35s ease;
-  -webkit-transition: all 0.35s ease;
 }
 @media only screen and (max-width: 2000px) {
   .navbar .toggle-bars {
@@ -166,7 +164,7 @@ a {
     font-family: "Lato", sans-serif;
     padding: 0.625rem 2.25rem;
     position: relative;
-    transition: all 0.35s ease;
+    transition: all 0.2s ease;
   }
   .navbar-menu__item-link:hover {
     color: #accbee;
@@ -210,8 +208,8 @@ a {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   transform: translate(-50%, 0) translateZ(0);
   -webkit-transform: translate(-50%, 0);
-  transition: all 0.35s ease;
-  -webkit-transition: all 0.35s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 }
 .navbar.mobile .navbar-logo {
   margin-top: -3.2rem;
