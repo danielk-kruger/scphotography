@@ -2,6 +2,8 @@ const navMenu = document.querySelector('.navbar-menu');
 const nav = document.querySelector('.navbar');
 const mobileMenu = document.getElementById('mobileMenu');
 const gridGallery = document.querySelector('.grid');
+const authorContent = document.querySelector('.authors').children;
+const aboutContent = document.querySelector('.authors');
 
 const client = contentful.createClient({
   space: 'zoqrycqrv59z',
@@ -46,15 +48,13 @@ class UI {
 
     gridGallery.innerHTML = res;
   }
-
-  displayAboutContent() {}
 }
 
-class Storage {
-  static saveContent(content) {
-    localStorage.setItem('content', JSON.stringify(content));
-  }
-}
+// class Storage {
+//   static saveContent(content) {
+//     localStorage.setItem('content', JSON.stringify(content));
+//   }
+// }
 
 function hideMenu() {
   const icon = mobileMenu.querySelector('i');
@@ -73,15 +73,13 @@ mobileMenu.addEventListener('click', () => {
   hideMenu();
 });
 
-const authorContent = document.querySelector('.authors').children;
-
 window.addEventListener('DOMContentLoaded', () => {
   const content = new Content();
   const ui = new UI();
 
   content.getGallery().then((item) => {
     ui.displayGalleryContent(item);
-    Storage.saveContent(item);
+    // Storage.saveContent(item);
 
     // Tile the Gallery Images
     const masonry = new Masonry('.grid', {
