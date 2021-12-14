@@ -4,9 +4,7 @@ const mobileMenu = document.getElementById('mobileMenu');
 const gridGallery = document.querySelector('.grid');
 
 const client = contentful.createClient({
-  // This is the space ID. A space is like a project folder in Contentful terms
   space: 'zoqrycqrv59z',
-  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
   accessToken: '3PL04WHPgmI7ZwK8pTy1ERf8ecaOeBS8ERCrnK7XUQ4',
 });
 
@@ -41,7 +39,7 @@ class UI {
     contentItems.forEach((item) => {
       res += `
       <div class="grid-item ${item.type}" data-aos="fade-up">
-        <img src=${item.image} alt="" />
+        <img src=${item.image} alt="img" />
       </div>
       `;
     });
@@ -57,10 +55,6 @@ class Storage {
     localStorage.setItem('content', JSON.stringify(content));
   }
 }
-
-// window.onload = () => {
-
-// };
 
 function hideMenu() {
   const icon = mobileMenu.querySelector('i');
@@ -116,7 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (window.innerWidth >= 1024) {
     AOS.init({
-      offset: -210,
+      offset: -200,
     });
   }
 
