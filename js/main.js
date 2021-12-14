@@ -5,11 +5,6 @@ const gridGallery = document.querySelector('.grid');
 const authorContent = document.querySelectorAll('.creator');
 const aboutContent = document.querySelector('.authors');
 
-// const client = contentful.createClient({
-//   space: 'zoqrycqrv59z',
-//   accessToken: '3PL04WHPgmI7ZwK8pTy1ERf8ecaOeBS8ERCrnK7XUQ4',
-// });
-
 window.onload = () => {
   // Tile the Gallery Images
   const masonry = new Masonry('.grid', {
@@ -21,8 +16,8 @@ window.onload = () => {
   });
 
   if (window.innerWidth >= 1024) {
-    masonry.gutter = 1;
-    masonry.horizontalOrder = false;
+    masonry.gutter = 5;
+    masonry.horizontalOrder = true;
   }
 
   // Fading effects
@@ -35,52 +30,6 @@ window.onload = () => {
     anchorPlacement: 'top-center',
   });
 };
-
-// class Content {
-//   async getGallery() {
-//     try {
-//       const galleryContent = await client.getEntries({
-//         content_type: 'scPhotography',
-//       });
-
-//       let gallery = galleryContent.items;
-//       // console.log(gallery);
-//       gallery = gallery.map((item) => {
-//         const { title, gallery } = item.fields;
-//         const { id } = item.sys;
-//         const image = item.fields.image.fields.file.url;
-//         const type = item.fields.image.fields.title;
-//         return { title, gallery, id, type, image };
-//       });
-
-//       // console.log(gallery.reverse());
-//       return gallery.reverse();
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   }
-// }
-
-// class UI {
-//   displayGalleryContent(contentItems) {
-//     let res = '';
-//     contentItems.forEach((item) => {
-//       res += `
-//       <div class="grid-item ${item.type}" data-aos="fade-up">
-//         <img src=${item.image} alt="img" />
-//       </div>
-//       `;
-//     });
-
-//     gridGallery.innerHTML = res;
-//   }
-// }
-
-// class Storage {
-//   static saveContent(content) {
-//     localStorage.setItem('content', JSON.stringify(content));
-//   }
-// }
 
 function hideMenu() {
   const icon = mobileMenu.querySelector('i');
@@ -100,14 +49,6 @@ mobileMenu.addEventListener('click', () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  // const content = new Content();
-  // const ui = new UI();
-
-  // content.getGallery().then((item) => {
-  //   ui.displayGalleryContent(item);
-  //   // Storage.saveContent(item);
-  // });
-
   if (window.innerWidth >= 1024) {
     AOS.init({
       offset: -200,

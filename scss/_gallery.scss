@@ -9,7 +9,8 @@
   padding-bottom: 6.25rem;
 
   @include md-screen {
-    padding-top: 2.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 4.25rem;
   }
 
   .grid {
@@ -22,33 +23,20 @@
       margin: 0;
 
       @include xlg-screen {
-        width: 15%;
-        // height: auto;
-        // margin: 1px;
-        // margin: 5px;
+        max-width: 300px;
       }
 
       @include md-screen {
-        width: 30%;
+        max-width: 100px;
       }
 
       &.width2 {
         @include xlg-screen {
-          width: 30%;
+          width: 300px;
         }
 
         @include md-screen {
-          width: 60%;
-        }
-
-        &:last-child {
-          @include xlg-screen {
-            width: 30%;
-          }
-
-          @include md-screen {
-            width: 80%;
-          }
+          max-width: 200px;
         }
       }
 

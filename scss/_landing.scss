@@ -45,7 +45,8 @@
     }
 
     @include sm-screen {
-      transform: translateX(40px);
+      transform: translateX(-80px);
+      margin-left: auto;
     }
 
     img {
@@ -180,7 +181,11 @@
 
     .navbar-logo {
       margin-top: -3.2rem;
-      transform: translateX(-60px) translateY(60px);
+      transform: translateX(-120px) translateY(60px);
+
+      @include md-screen {
+        transform: translateX(-40px) translateY(60px);
+      }
 
       img {
         display: block;
@@ -284,10 +289,8 @@
     text-align: center;
     margin-bottom: 2.25rem;
     z-index: 2;
-    background-image: url('../images/grayscale-background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../images/grayscale-background_sm.jpg');
+
     border-radius: 0.5rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6),
       -2px -2px 10px rgba(0, 0, 0, 0.6);
@@ -298,11 +301,18 @@
       width: 97%;
       min-width: 95%;
       margin-bottom: 0;
+
+      background-image: url('../images/grayscale-background_desktop.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     @include md-screen {
       height: 90%;
       min-height: 85%;
+
+      background-image: url('../images/grayscale-background_md.jpg');
     }
 
     @include sm-screen {
@@ -311,7 +321,8 @@
       height: 88%;
       min-height: 80%;
       margin-top: 0;
-      margin-bottom: 2.625rem;
+      margin-bottom: 1.625rem;
+      background-image: url('../images/grayscale-background_sm.jpg');
     }
 
     .hero-content {
