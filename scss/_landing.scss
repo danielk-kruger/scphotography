@@ -315,16 +315,6 @@
       background-image: url('../images/grayscale-background_md.jpg');
     }
 
-    @include sm-screen {
-      width: 95%;
-      min-width: 90%;
-      height: 88%;
-      min-height: 80%;
-      margin-top: 0;
-      margin-bottom: 1.625rem;
-      background-image: url('../images/grayscale-background_sm.jpg');
-    }
-
     .hero-content {
       color: $white;
       width: 90%;

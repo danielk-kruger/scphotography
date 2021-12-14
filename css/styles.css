@@ -327,17 +327,6 @@ a {
     background-image: url("../images/grayscale-background_md.jpg");
   }
 }
-@media only screen and (max-width: 520px) {
-  .hero-wrapper {
-    width: 95%;
-    min-width: 90%;
-    height: 88%;
-    min-height: 80%;
-    margin-top: 0;
-    margin-bottom: 1.625rem;
-    background-image: url("../images/grayscale-background_sm.jpg");
-  }
-}
 .hero-wrapper .hero-content {
   color: #efefef;
   width: 90%;
