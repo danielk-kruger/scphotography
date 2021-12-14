@@ -5,10 +5,10 @@ const gridGallery = document.querySelector('.grid');
 const authorContent = document.querySelectorAll('.creator');
 const aboutContent = document.querySelector('.authors');
 
-const client = contentful.createClient({
-  space: 'zoqrycqrv59z',
-  accessToken: '3PL04WHPgmI7ZwK8pTy1ERf8ecaOeBS8ERCrnK7XUQ4',
-});
+// const client = contentful.createClient({
+//   space: 'zoqrycqrv59z',
+//   accessToken: '3PL04WHPgmI7ZwK8pTy1ERf8ecaOeBS8ERCrnK7XUQ4',
+// });
 
 window.onload = () => {
   // Tile the Gallery Images
