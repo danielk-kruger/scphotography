@@ -79,7 +79,7 @@
 
   .toggle-bars {
     position: relative;
-    transform: translateX(-40px);
+    transform: translateX(-40px) translate3d(0, 0, 0);
     z-index: 99;
     cursor: pointer;
     transition: $medium-transition;
