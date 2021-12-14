@@ -24,47 +24,57 @@ window.onload = () => {
     masonry.gutter = 1;
     masonry.horizontalOrder = false;
   }
+
+  // Fading effects
+  AOS.init({
+    useClassNames: false,
+    easing: 'ease-in-out',
+    duration: 600,
+    once: false,
+    offset: -205,
+    anchorPlacement: 'top-center',
+  });
 };
 
-class Content {
-  async getGallery() {
-    try {
-      const galleryContent = await client.getEntries({
-        content_type: 'scPhotography',
-      });
+// class Content {
+//   async getGallery() {
+//     try {
+//       const galleryContent = await client.getEntries({
+//         content_type: 'scPhotography',
+//       });
 
-      let gallery = galleryContent.items;
-      // console.log(gallery);
-      gallery = gallery.map((item) => {
-        const { title, gallery } = item.fields;
-        const { id } = item.sys;
-        const image = item.fields.image.fields.file.url;
-        const type = item.fields.image.fields.title;
-        return { title, gallery, id, type, image };
-      });
+//       let gallery = galleryContent.items;
+//       // console.log(gallery);
+//       gallery = gallery.map((item) => {
+//         const { title, gallery } = item.fields;
+//         const { id } = item.sys;
+//         const image = item.fields.image.fields.file.url;
+//         const type = item.fields.image.fields.title;
+//         return { title, gallery, id, type, image };
+//       });
 
-      // console.log(gallery.reverse());
-      return gallery.reverse();
-    } catch (err) {
-      console.log(err);
-    }
-  }
-}
+//       // console.log(gallery.reverse());
+//       return gallery.reverse();
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   }
+// }
 
-class UI {
-  displayGalleryContent(contentItems) {
-    let res = '';
-    contentItems.forEach((item) => {
-      res += `
-      <div class="grid-item ${item.type}" data-aos="fade-up">
-        <img src=${item.image} alt="img" />
-      </div>
-      `;
-    });
+// class UI {
+//   displayGalleryContent(contentItems) {
+//     let res = '';
+//     contentItems.forEach((item) => {
+//       res += `
+//       <div class="grid-item ${item.type}" data-aos="fade-up">
+//         <img src=${item.image} alt="img" />
+//       </div>
+//       `;
+//     });
 
-    gridGallery.innerHTML = res;
-  }
-}
+//     gridGallery.innerHTML = res;
+//   }
+// }
 
 // class Storage {
 //   static saveContent(content) {
@@ -97,16 +107,6 @@ window.addEventListener('DOMContentLoaded', () => {
   //   ui.displayGalleryContent(item);
   //   // Storage.saveContent(item);
   // });
-
-  // Fading effects
-  AOS.init({
-    useClassNames: false,
-    easing: 'ease-in-out',
-    duration: 600,
-    once: false,
-    offset: -205,
-    anchorPlacement: 'top-center',
-  });
 
   if (window.innerWidth >= 1024) {
     AOS.init({
