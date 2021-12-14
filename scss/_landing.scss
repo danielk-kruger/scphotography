@@ -323,6 +323,10 @@
       background-image: url('../images/grayscale-background_md.jpg');
     }
 
+    @include sm-screen {
+      background-image: url('../images/grayscale-background_sm.jpg');
+    }
+
     .hero-content {
       color: $white;
       width: 90%;
