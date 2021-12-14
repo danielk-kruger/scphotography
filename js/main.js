@@ -2,7 +2,7 @@ const navMenu = document.querySelector('.navbar-menu');
 const nav = document.querySelector('.navbar');
 const mobileMenu = document.getElementById('mobileMenu');
 const gridGallery = document.querySelector('.grid');
-const authorContent = document.querySelector('.authors').children;
+const authorContent = document.querySelectorAll('.creator');
 const aboutContent = document.querySelector('.authors');
 
 const client = contentful.createClient({
