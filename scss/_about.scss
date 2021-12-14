@@ -73,6 +73,7 @@
             justify-content: space-around;
             align-items: center;
             color: $white;
+            // transform: translateZ(0);
 
             @include sm-screen {
               justify-content: space-evenly;
@@ -217,6 +218,7 @@
             width: 100%;
             align-items: center;
             color: $white;
+            // transform: translateZ(0);
 
             &__header {
               text-align: center;
@@ -340,6 +342,7 @@
             justify-content: space-between;
             align-items: center;
             z-index: 1;
+            // transform: translateZ(0);
 
             @include md-screen {
               justify-content: space-evenly;

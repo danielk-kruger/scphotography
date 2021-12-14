@@ -10,6 +10,22 @@ const client = contentful.createClient({
   accessToken: '3PL04WHPgmI7ZwK8pTy1ERf8ecaOeBS8ERCrnK7XUQ4',
 });
 
+window.onload = () => {
+  // Tile the Gallery Images
+  const masonry = new Masonry('.grid', {
+    itemSelector: '.grid-item',
+    gutter: 5,
+    horizontalOrder: true,
+    fitWidth: true,
+    transitionDuration: 0,
+  });
+
+  if (window.innerWidth >= 1024) {
+    masonry.gutter = 1;
+    masonry.horizontalOrder = false;
+  }
+};
+
 class Content {
   async getGallery() {
     try {
@@ -74,33 +90,19 @@ mobileMenu.addEventListener('click', () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  const content = new Content();
-  const ui = new UI();
+  // const content = new Content();
+  // const ui = new UI();
 
-  content.getGallery().then((item) => {
-    ui.displayGalleryContent(item);
-    // Storage.saveContent(item);
-
-    // Tile the Gallery Images
-    const masonry = new Masonry('.grid', {
-      itemSelector: '.grid-item',
-      gutter: 5,
-      horizontalOrder: true,
-      fitWidth: true,
-      transitionDuration: 0,
-    });
-
-    if (window.innerWidth >= 1024) {
-      masonry.gutter = 1;
-      masonry.horizontalOrder = false;
-    }
-  });
+  // content.getGallery().then((item) => {
+  //   ui.displayGalleryContent(item);
+  //   // Storage.saveContent(item);
+  // });
 
   // Fading effects
   AOS.init({
     useClassNames: false,
     easing: 'ease-in-out',
-    duration: 400,
+    duration: 600,
     once: false,
     offset: -205,
     anchorPlacement: 'top-center',

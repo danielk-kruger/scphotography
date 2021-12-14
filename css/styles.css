@@ -459,6 +459,11 @@ a {
   padding-top: 4.25rem;
   padding-bottom: 6.25rem;
 }
+@media only screen and (max-width: 850px) {
+  .gallery {
+    padding-top: 2.25rem;
+  }
+}
 .gallery .grid {
   width: 100%;
   margin: 0 auto;
