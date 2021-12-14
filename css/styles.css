@@ -338,7 +338,7 @@ a {
 }
 @media only screen and (max-width: 520px) {
   .hero-wrapper {
-    background-image: url("../images/grayscale-background_sm.jpg");
+    background-image: url("../images/grayscale-background.jpg");
   }
 }
 .hero-wrapper .hero-content {
