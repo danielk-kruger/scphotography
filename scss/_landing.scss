@@ -319,13 +319,13 @@
       background-repeat: no-repeat;
     }
 
-    @include md-screen {
-      background-image: url('../images/grayscale-background_md.jpg');
-    }
+    // @include md-screen {
+    //   background-image: url('../images/grayscale-background_md.jpg');
+    // }
 
-    @include sm-screen {
-      background-image: url('../images/grayscale-background.jpg');
-    }
+    // @include sm-screen {
+    //   background-image: url('../images/grayscale-background.jpg');
+    // }
 
     .hero-content {
       color: $white;

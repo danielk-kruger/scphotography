@@ -331,16 +331,6 @@ a {
     background-repeat: no-repeat;
   }
 }
-@media only screen and (max-width: 850px) {
-  .hero-wrapper {
-    background-image: url("../images/grayscale-background_md.jpg");
-  }
-}
-@media only screen and (max-width: 520px) {
-  .hero-wrapper {
-    background-image: url("../images/grayscale-background.jpg");
-  }
-}
 .hero-wrapper .hero-content {
   color: #efefef;
   width: 90%;
