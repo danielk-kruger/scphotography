@@ -10,6 +10,7 @@
   align-items: center;
   transition: $no-ease;
   -webkit-transition: $no-ease;
+  position: fixed;
   // will-change: height;
   // transform: translateZ(0);
 
@@ -27,9 +28,13 @@
     width: 90%;
   }
 
-  @include sm-screen {
-    margin-top: $m-small;
+  @include md-screen {
+    margin: 0;
   }
+
+  // @include sm-screen {
+  //   margin-top: $m-small;
+  // }
 
   &-logo {
     max-width: 10rem !important;
@@ -46,10 +51,11 @@
 
     @include md-screen {
       max-width: 12rem;
+      transform: translateY(40px);
     }
 
     @include sm-screen {
-      transform: translateX(-80px);
+      transform: translateX(-80px) translateY(20px);
       margin-left: auto;
       max-width: 10rem;
     }
@@ -67,10 +73,6 @@
         transform: scale(1.6);
       }
 
-      // @include md-screen {
-      //   transform: scale(1);
-      // }
-
       @include sm-screen {
         transform: scale(1.4);
       }
@@ -79,7 +81,7 @@
 
   .toggle-bars {
     position: relative;
-    transform: translateX(-40px);
+    transform: translateX(-40px) translateY(40px);
     z-index: 99;
     cursor: pointer;
     // transition: $medium-transition;
@@ -91,10 +93,11 @@
 
     @include md-screen {
       display: block;
+      transform: translateY(40px) translateX(-40px);
     }
 
     @include sm-screen {
-      transform: translateX(-20px);
+      transform: translateX(-20px) translateY(20px);
     }
 
     .fa-bars {
@@ -109,7 +112,7 @@
   }
 
   &-menu {
-    display: none;
+    // display: none;
 
     @include xlg-screen {
       display: flex;
@@ -170,8 +173,8 @@
   }
 
   &.mobile {
-    position: absolute;
-    height: $h-max;
+    position: fixed;
+    height: 100vh;
     width: $w-max;
     margin: 0;
     top: 0px;
@@ -186,16 +189,17 @@
     -webkit-transform: translate(-50%, 0);
     transition: $no-ease;
     -webkit-transition: $no-ease;
+    animation: scaleUp 0.3s 0.2s ease;
 
     .navbar-logo {
-      margin-top: -3.2rem;
+      // margin-top: -3.2rem;
 
       @include md-screen {
-        transform: translateX(-40px) translateY(60px);
+        transform: translateX(-40px) translateY(0px);
       }
 
       @include sm-screen {
-        transform: translateX(-120px) translateY(60px);
+        transform: translateX(-140px) translateY(0px);
       }
 
       img {
@@ -210,11 +214,11 @@
       display: block;
 
       @include md-screen {
-        transform: translateY(75px) translateX(250px);
+        transform: translateY(65px) translateX(250px);
       }
 
       @include sm-screen {
-        transform: translateY(75px) translateX(140px);
+        transform: translateY(65px) translateX(140px);
       }
 
       .fa-times {

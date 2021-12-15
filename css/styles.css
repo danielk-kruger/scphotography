@@ -34,6 +34,7 @@ a {
   align-items: center;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
+  position: fixed;
 }
 @media only screen and (max-width: 2000px) {
   .navbar {
@@ -51,9 +52,9 @@ a {
     width: 90%;
   }
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 850px) {
   .navbar {
-    margin-top: 1.625rem;
+    margin: 0;
   }
 }
 .navbar-logo {
@@ -74,11 +75,12 @@ a {
 @media only screen and (max-width: 850px) {
   .navbar-logo {
     max-width: 12rem;
+    transform: translateY(40px);
   }
 }
 @media only screen and (max-width: 520px) {
   .navbar-logo {
-    transform: translateX(-80px);
+    transform: translateX(-80px) translateY(20px);
     margin-left: auto;
     max-width: 10rem;
   }
@@ -105,7 +107,7 @@ a {
 }
 .navbar .toggle-bars {
   position: relative;
-  transform: translateX(-40px);
+  transform: translateX(-40px) translateY(40px);
   z-index: 99;
   cursor: pointer;
 }
@@ -117,11 +119,12 @@ a {
 @media only screen and (max-width: 850px) {
   .navbar .toggle-bars {
     display: block;
+    transform: translateY(40px) translateX(-40px);
   }
 }
 @media only screen and (max-width: 520px) {
   .navbar .toggle-bars {
-    transform: translateX(-20px);
+    transform: translateX(-20px) translateY(20px);
   }
 }
 .navbar .toggle-bars .fa-bars {
@@ -133,9 +136,6 @@ a {
   .navbar .toggle-bars .fa-bars {
     font-size: 1.825rem;
   }
-}
-.navbar-menu {
-  display: none;
 }
 @media only screen and (max-width: 2000px) {
   .navbar-menu {
@@ -192,8 +192,8 @@ a {
   }
 }
 .navbar.mobile {
-  position: absolute;
-  height: 100%;
+  position: fixed;
+  height: 100vh;
   width: 100%;
   margin: 0;
   top: 0px;
@@ -208,18 +208,16 @@ a {
   -webkit-transform: translate(-50%, 0);
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
-}
-.navbar.mobile .navbar-logo {
-  margin-top: -3.2rem;
+  animation: scaleUp 0.3s 0.2s ease;
 }
 @media only screen and (max-width: 850px) {
   .navbar.mobile .navbar-logo {
-    transform: translateX(-40px) translateY(60px);
+    transform: translateX(-40px) translateY(0px);
   }
 }
 @media only screen and (max-width: 520px) {
   .navbar.mobile .navbar-logo {
-    transform: translateX(-120px) translateY(60px);
+    transform: translateX(-140px) translateY(0px);
   }
 }
 .navbar.mobile .navbar-logo img {
@@ -233,12 +231,12 @@ a {
 }
 @media only screen and (max-width: 850px) {
   .navbar.mobile .toggle-bars {
-    transform: translateY(75px) translateX(250px);
+    transform: translateY(65px) translateX(250px);
   }
 }
 @media only screen and (max-width: 520px) {
   .navbar.mobile .toggle-bars {
-    transform: translateY(75px) translateX(140px);
+    transform: translateY(65px) translateX(140px);
   }
 }
 .navbar.mobile .toggle-bars .fa-times {
