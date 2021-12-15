@@ -8,8 +8,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  transition: $fast-transition;
-  -webkit-transition: $fast-transition;
+  transition: $no-ease;
+  -webkit-transition: $no-ease;
   // will-change: height;
   // transform: translateZ(0);
 
@@ -184,8 +184,8 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
-    transition: $fast-transition;
-    -webkit-transition: $fast-transition;
+    transition: $no-ease;
+    -webkit-transition: $no-ease;
 
     .navbar-logo {
       margin-top: -3.2rem;
