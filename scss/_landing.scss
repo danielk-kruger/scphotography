@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   @include xlg-screen {
     margin-top: $m-wide;
@@ -222,7 +222,7 @@
       align-items: center;
       width: $w-wide;
       height: $h-wide;
-      padding-bottom: $p-wide;
+      padding-bottom: $p-xwide;
 
       @include md-screen {
         padding-bottom: $p-xwide;
