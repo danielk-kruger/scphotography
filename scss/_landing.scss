@@ -173,6 +173,7 @@
     background: $black;
     z-index: 10;
     flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
@@ -217,7 +218,7 @@
       list-style: none;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       width: $w-wide;
       height: $h-wide;
