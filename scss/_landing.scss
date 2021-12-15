@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  transition: all 0.3s ease;
 
   @include xlg-screen {
     margin-top: $m-wide;
@@ -76,8 +77,6 @@
     transform: translateX(-40px) translateY(40px);
     z-index: 99;
     cursor: pointer;
-    // transition: $medium-transition;
-    // -webkit-transition: $medium-transition;
 
     @include xlg-screen {
       display: none;
@@ -181,8 +180,6 @@
     -webkit-transform: translate(-50%, 0);
 
     .navbar-logo {
-      // margin-top: -3.2rem;
-
       @include md-screen {
         transform: translateX(-40px) translateY(0px);
       }
@@ -221,7 +218,7 @@
       list-style: none;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
       width: $w-wide;
       height: $h-wide;
@@ -239,20 +236,7 @@
           text-transform: uppercase;
           font-family: $lato;
           position: relative;
-          // padding-bottom: 1.25rem;
           transition: none;
-
-          // &::after {
-          //   content: '';
-          //   height: 1px;
-          //   width: 1000%;
-          //   background: $gray;
-          //   position: absolute;
-          //   bottom: 0;
-          //   left: 50%;
-          //   transform: translateX(-50%);
-          //   box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.45);
-          // }
 
           @include md-screen {
             font-size: 1.825rem;
