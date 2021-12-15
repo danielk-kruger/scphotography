@@ -173,11 +173,10 @@
     background: $black;
     z-index: 10;
     flex-direction: column;
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
+    transition: all 0.2s ease-in-out;
 
     .navbar-logo {
       @include md-screen {
