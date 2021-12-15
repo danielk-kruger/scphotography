@@ -34,8 +34,6 @@ a {
   align-items: center;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
-  will-change: height;
-  transform: translateZ(0);
 }
 @media only screen and (max-width: 2000px) {
   .navbar {
@@ -271,6 +269,7 @@ a {
   font-family: "Lato", sans-serif;
   position: relative;
   padding-bottom: 2rem;
+  transition: none;
 }
 .navbar.mobile .navbar-menu .navbar-menu__item .navbar-menu__item-link::after {
   content: "";
@@ -486,9 +485,9 @@ a {
     max-width: 100px;
   }
 }
-@media only screen and (max-width: 850px) {
-  .gallery .grid-item.width2 {
-    max-width: 200px;
+@media only screen and (max-width: 520px) {
+  .gallery .grid-item:last-child {
+    display: none;
   }
 }
 @media only screen and (max-width: 520px) {

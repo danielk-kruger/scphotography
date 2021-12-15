@@ -37,15 +37,13 @@
         max-width: 100px;
       }
 
-      &.width2 {
-        // @include xlg-screen {
-        //   max-width: 300px;
-        // }
-
-        @include md-screen {
-          max-width: 200px;
+      &:last-child {
+        @include sm-screen {
+          display: none;
         }
+      }
 
+      &.width2 {
         @include sm-screen {
           max-width: 200px;
         }
