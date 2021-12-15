@@ -16,8 +16,8 @@ window.onload = () => {
   });
 
   if (window.innerWidth >= 1024) {
-    masonry.gutter = 5;
-    masonry.horizontalOrder = true;
+    masonry.gutter = 10;
+    masonry.horizontalOrder = false;
   }
 
   // Fading effects

@@ -315,23 +315,14 @@ a {
   margin-bottom: 2.25rem;
   z-index: 2;
   background-image: url("../images/grayscale-background.jpg");
-  border-radius: 0.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6), -2px -2px 10px rgba(0, 0, 0, 0.6);
 }
 @media only screen and (max-width: 2000px) {
   .hero-wrapper {
-    height: 100%;
-    width: 100%;
     margin-bottom: 0;
-    background-image: url("../images/grayscale-background_desktop.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-@media only screen and (max-width: 520px) {
-  .hero-wrapper {
-    background-image: url("../images/grayscale-background_md.jpg");
   }
 }
 .hero-wrapper .hero-content {
@@ -477,24 +468,30 @@ a {
 .gallery .grid-item {
   border-radius: 0.5rem;
   transform: translate3d(0, 0, 0);
-  margin: 0;
 }
 @media only screen and (max-width: 2000px) {
   .gallery .grid-item {
-    max-width: 300px;
+    max-width: 250px;
+    margin: 1rem;
   }
 }
 @media only screen and (max-width: 850px) {
+  .gallery .grid-item {
+    max-width: 200px;
+    margin: 0.425rem;
+  }
+}
+@media only screen and (max-width: 520px) {
   .gallery .grid-item {
     max-width: 100px;
   }
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 850px) {
   .gallery .grid-item.width2 {
-    width: 300px;
+    max-width: 200px;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 520px) {
   .gallery .grid-item.width2 {
     max-width: 200px;
   }
