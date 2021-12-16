@@ -17,8 +17,6 @@
     width: 100%;
 
     &:first-child {
-      // margin-top: 4.25rem;
-
       @include md-screen {
         margin-top: 0;
         margin-bottom: 0.25rem;
