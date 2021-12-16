@@ -453,6 +453,11 @@ a {
 .gallery .grid:first-child {
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 850px) {
+  .gallery .grid:first-child {
+    margin-top: 0.25rem;
+  }
+}
 .gallery .grid-item {
   border-radius: 0.5rem;
 }
