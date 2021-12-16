@@ -292,7 +292,6 @@ a {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  padding-bottom: 4.25rem;
 }
 .hero-wrapper {
   width: 100%;
@@ -444,12 +443,12 @@ a {
 }
 @media only screen and (max-width: 850px) {
   .gallery {
-    padding-bottom: 4.25rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 }
 .gallery .grid {
   width: 100%;
-  height: auto;
 }
 .gallery .grid:first-child {
   margin-bottom: 1rem;
@@ -459,8 +458,7 @@ a {
 }
 @media only screen and (max-width: 520px) {
   .gallery .grid-item {
-    width: 150px;
-    padding-bottom: 2.25rem;
+    width: 200px;
   }
 }
 .gallery .grid-item img {
