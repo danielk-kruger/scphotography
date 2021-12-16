@@ -444,7 +444,7 @@ a {
 @media only screen and (max-width: 850px) {
   .gallery {
     padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding-bottom: 6.25rem;
   }
 }
 .gallery .grid {
@@ -456,6 +456,7 @@ a {
 @media only screen and (max-width: 850px) {
   .gallery .grid:first-child {
     margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
   }
 }
 .gallery .grid-item {

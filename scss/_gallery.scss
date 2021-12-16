@@ -9,7 +9,7 @@
 
   @include md-screen {
     padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding-bottom: 6.25rem;
   }
 
   .grid {
@@ -21,6 +21,7 @@
 
       @include md-screen {
         margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
       }
     }
 
