@@ -439,6 +439,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 4.25rem;
   padding-bottom: 4.25rem;
 }
 @media only screen and (max-width: 850px) {
@@ -450,17 +451,24 @@ a {
 .gallery .grid {
   width: 100%;
 }
-.gallery .grid:first-child {
-  margin-bottom: 1rem;
-}
 @media only screen and (max-width: 850px) {
   .gallery .grid:first-child {
-    margin-top: 0.25rem;
+    margin-top: 0;
     margin-bottom: 0.25rem;
+  }
+}
+.gallery .grid#light-slider-2 {
+  margin-top: 2.25rem;
+}
+@media only screen and (max-width: 850px) {
+  .gallery .grid#light-slider-2 {
+    margin-top: 2.825rem;
   }
 }
 .gallery .grid-item {
   border-radius: 0.5rem;
+  width: 300px;
+  height: auto;
 }
 @media only screen and (max-width: 520px) {
   .gallery .grid-item {
@@ -469,6 +477,7 @@ a {
 }
 .gallery .grid-item img {
   width: 100%;
+  height: 100%;
   border-radius: 0.5rem;
 }
 

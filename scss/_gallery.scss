@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 4.25rem;
   padding-bottom: 4.25rem;
 
   @include md-screen {
@@ -14,30 +15,37 @@
 
   .grid {
     width: 100%;
-    // height: auto;
 
     &:first-child {
-      margin-bottom: 1rem;
+      // margin-top: 4.25rem;
 
       @include md-screen {
-        margin-top: 0.25rem;
+        margin-top: 0;
         margin-bottom: 0.25rem;
+      }
+    }
+
+    &#light-slider-2 {
+      margin-top: 2.25rem;
+
+      @include md-screen {
+        margin-top: 2.825rem;
       }
     }
 
     &-item {
       border-radius: 0.5rem;
+      width: 300px;
+      height: auto;
 
       @include sm-screen {
         width: 200px;
-        // padding-bottom: 2.25rem;
       }
 
       img {
         width: 100%;
+        height: 100%;
         border-radius: 0.5rem;
-        // box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2),
-        //   0px -2px 12px rgba(0, 0, 0, 0.2);
       }
     }
   }

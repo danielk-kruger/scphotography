@@ -6,52 +6,34 @@ const authorContent = document.querySelectorAll('.creator');
 const aboutContent = document.querySelector('.authors');
 
 $(document).ready(function () {
-  $('#light-slider').lightSlider({
+  sliderSettings = {
     item: 10,
     cssEasing: 'cubic-bezier(0.35, 0, 0.35, 1)',
-    easing: 'ease-in-out',
-    speed: 1000,
-    auto: true,
-    pause: 3000,
+    easing: 'cubic-bezier(0.35, 0, 0.35, 1)',
+    speed: 600,
     autoWidth: true,
-    pager: false,
-    loop: true,
+    pager: true,
+    loop: false,
+    prevHtml: `<i class="fas fa-chevron-left"></i>`,
+    nextHtml: `<i class="fas fa-chevron-right"></i>`,
 
     responsive: [
       {
         breakpoint: 520,
         settings: {
           item: 3,
-          slideMargin: 15,
+          slideMargin: 20,
           easing: 'linear',
+          pager: true,
+          auto: false,
+          controls: false,
         },
       },
     ],
-  });
+  };
 
-  $('#light-slider-2').lightSlider({
-    item: 10,
-    cssEasing: 'cubic-bezier(0.35, 0, 0.35, 1)',
-    easing: 'ease-in-out',
-    speed: 1000,
-    pause: 3000,
-    auto: true,
-    autoWidth: true,
-    pager: false,
-    loop: true,
-    rtl: true,
-
-    responsive: [
-      {
-        breakpoint: 520,
-        settings: {
-          item: 3,
-          slideMargin: 15,
-          easing: 'linear',
-        },
-      },
-    ],
-  });
+  $('#light-slider').lightSlider(sliderSettings);
+  $('#light-slider-2').lightSlider(sliderSettings);
 });
 
 function hideMenu() {
