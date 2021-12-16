@@ -22,7 +22,7 @@ $(document).ready(function () {
         breakpoint: 520,
         settings: {
           item: 3,
-          slideMargin: 30,
+          slideMargin: 15,
           easing: 'linear',
         },
       },
@@ -46,7 +46,7 @@ $(document).ready(function () {
         breakpoint: 520,
         settings: {
           item: 3,
-          slideMargin: 30,
+          slideMargin: 15,
           easing: 'linear',
         },
       },
