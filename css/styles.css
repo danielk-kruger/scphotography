@@ -435,7 +435,7 @@ a {
 .gallery {
   height: fit-content;
   width: 100%;
-  background-image: linear-gradient(to bottom, #30cfd0 0%, #e2e1e1 100%);
+  background-image: linear-gradient(to bottom, #330867 0%, #e7f0fd 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
