@@ -5,31 +5,52 @@ const gridGallery = document.querySelector('.grid');
 const authorContent = document.querySelectorAll('.creator');
 const aboutContent = document.querySelector('.authors');
 
-window.onload = () => {
-  // Tile the Gallery Images
-  const masonry = new Masonry('.grid', {
-    itemSelector: '.grid-item',
-    gutter: 5,
-    horizontalOrder: true,
-    fitWidth: true,
-    transitionDuration: 0,
-  });
-
-  if (window.innerWidth >= 1024) {
-    masonry.gutter = 10;
-    masonry.horizontalOrder = false;
-  }
-
-  // Fading effects
-  AOS.init({
-    useClassNames: false,
+$(document).ready(function () {
+  $('#light-slider').lightSlider({
+    item: 10,
+    cssEasing: 'cubic-bezier(0.35, 0, 0.35, 1)',
     easing: 'ease-in-out',
-    duration: 600,
-    once: false,
-    offset: -205,
-    anchorPlacement: 'top-center',
+    speed: 1000,
+    auto: true,
+    pause: 3000,
+    autoWidth: true,
+    pager: false,
+    loop: true,
+
+    responsive: [
+      {
+        breakpoint: 520,
+        settings: {
+          item: 3,
+          slideMargin: 15,
+        },
+      },
+    ],
   });
-};
+
+  $('#light-slider-2').lightSlider({
+    item: 10,
+    cssEasing: 'cubic-bezier(0.35, 0, 0.35, 1)',
+    easing: 'ease-in-out',
+    speed: 1000,
+    pause: 3000,
+    auto: true,
+    autoWidth: true,
+    pager: false,
+    loop: true,
+    rtl: true,
+
+    responsive: [
+      {
+        breakpoint: 520,
+        settings: {
+          item: 3,
+          slideMargin: 15,
+        },
+      },
+    ],
+  });
+});
 
 function hideMenu() {
   const icon = mobileMenu.querySelector('i');
@@ -49,11 +70,13 @@ mobileMenu.addEventListener('click', () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth >= 1024) {
-    AOS.init({
-      offset: -200,
-    });
-  }
+  AOS.init({
+    useClassNames: false,
+    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+    duration: 600,
+    once: false,
+    anchorPlacement: 'center',
+  });
 
   let index = 0;
   const slides = authorContent;

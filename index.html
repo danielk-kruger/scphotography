@@ -13,8 +13,8 @@
       crossorigin="anonymous"
       defer
     />
+    <link rel="stylesheet" href="./css/lightslider.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -68,45 +68,82 @@
 
     <!-- About -->
     <section id="gallery" class="gallery">
-      <div class="grid">
-        <div class="grid-item p" data-aos="fade-up">
+      <ul class="grid" id="light-slider">
+        <li class="grid-item p">
           <img src="./images/img1.jpg" alt="" />
-        </div>
-        <div class="grid-item p width2" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img14.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img3.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img13.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img4.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img8.jpg" alt="" />
-        </div>
-
-        <div class="grid-item l width2" data-aos="fade-up">
+        </li>
+        <li class="grid-item l">
           <img src="./images/img2.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img6.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img5.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img7.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img9.jpg" alt="" />
-        </div>
-        <div class="grid-item p" data-aos="fade-up">
+        </li>
+        <li class="grid-item p">
           <img src="./images/img10.jpg" alt="" />
-        </div>
-      </div>
+        </li>
+      </ul>
+      <ul class="grid" id="light-slider-2">
+        <li class="grid-item p">
+          <img src="./images/img15.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img16.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img17.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img18.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img19.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img20.jpg" alt="" />
+        </li>
+        <li class="grid-item l">
+          <img src="./images/img21.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img22.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img23.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img24.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img25.jpg" alt="" />
+        </li>
+        <li class="grid-item p">
+          <img src="./images/img26.jpg" alt="" />
+        </li>
+      </ul>
     </section>
 
     <section id="about">
@@ -119,7 +156,7 @@
           </div>
           <div class="creator hide">
             <img src="./images/fady-hany_md.jpg" class="fady" alt="" />
-            <div class="overlay" data-aos="zoom-out-up" data-aos-offset="-100">
+            <div class="overlay" data-aos="zoom-out-up" data-aos-offset="220">
               <h1 class="lead" id="lead">Meet our photographers!</h1>
               <div class="overlay-content">
                 <h2 id="content">Leo Allaire,</h2>
@@ -138,7 +175,7 @@
           </div>
           <div class="creator hide">
             <img src="./images/ellen_md.jpg" alt="" />
-            <div class="overlay" data-aos="zoom-out-up" data-aos-offset="-100">
+            <div class="overlay" data-aos="zoom-out-up" data-aos-offset="220">
               <h1 class="lead">Meet our photographers!</h1>
               <div class="overlay-content">
                 <h2>Ellen Hanson,</h2>
@@ -156,7 +193,7 @@
           </div>
           <div class="creator hide">
             <img src="./images/hassan-ouajbir_md.jpg" alt="" />
-            <div class="overlay" data-aos="zoom-out-up" data-aos-offset="-120">
+            <div class="overlay" data-aos="zoom-out-up" data-aos-offset="220">
               <h1 class="lead">Meet our photographers!</h1>
               <div class="overlay-content">
                 <h2>Hassan Abdul,</h2>
@@ -178,11 +215,7 @@
         <div class="about-content__item">
           <div class="equip">
             <img src="./images/equipment.jpg" alt="" />
-            <div
-              class="equip-content"
-              data-aos="zoom-in"
-              data-aos-offset="-100"
-            >
+            <div class="equip-content" data-aos="zoom-in" data-aos-offset="220">
               <div class="equip-content__header">
                 <h2>High Quality Gadgets for all your photographic needs</h2>
               </div>
@@ -202,7 +235,7 @@
             <div
               class="services-content"
               data-aos="zoom-out"
-              data-aos-offset="-50"
+              data-aos-offset="100"
             >
               <div class="services-content__header">
                 <h2>What makes us different?</h2>
@@ -221,8 +254,15 @@
       </div>
     </section>
 
-    <script src="./js/masonry.pkgd.min.js" defer></script>
+    <!-- <script src="./js/masonry.pkgd.min.js" defer></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/lightslider.js"></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>

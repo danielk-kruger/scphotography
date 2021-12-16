@@ -1,58 +1,38 @@
 .gallery {
-  height: fit-content;
+  height: 110vh;
   width: 100%;
   background-image: linear-gradient(to bottom, #30cfd0 0%, $light-gray 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 4.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 0.425rem;
+  padding-bottom: 4.25rem;
 
   @include md-screen {
-    padding-top: 1.25rem;
     padding-bottom: 4.25rem;
   }
 
   .grid {
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+    &:first-child {
+      margin-bottom: 1rem;
+    }
 
     &-item {
-      height: auto;
       border-radius: 0.5rem;
 
-      @include xlg-screen {
-        max-width: 250px;
-        margin: 1rem;
-      }
-
-      @include md-screen {
-        max-width: 200px;
-        margin: 0.425rem;
-      }
-
       @include sm-screen {
-        max-width: 100px;
-      }
-
-      &:last-child {
-        @include sm-screen {
-          display: none;
-        }
-      }
-
-      &.width2 {
-        @include sm-screen {
-          max-width: 200px;
-        }
+        width: 150px;
+        padding-bottom: 2.25rem;
       }
 
       img {
         width: 100%;
         border-radius: 0.5rem;
-        box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2),
-          0px -1px 10px rgba(0, 0, 0, 0.2);
+        // box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2),
+        //   0px -2px 12px rgba(0, 0, 0, 0.2);
       }
     }
   }

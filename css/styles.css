@@ -33,8 +33,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  transition: all 0.325s linear;
-  -webkit-transition: all 0.325s linear;
+  transition: all 0.325s cubic-bezier(0.25, 0, 0.25, 0.65);
+  -webkit-transition: all 0.325s cubic-bezier(0.25, 0, 0.25, 0.65);
 }
 @media only screen and (max-width: 2000px) {
   .navbar {
@@ -292,6 +292,7 @@ a {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  padding-bottom: 4.25rem;
 }
 .hero-wrapper {
   width: 100%;
@@ -300,7 +301,6 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 2.25rem;
   z-index: 2;
   background-image: url("../images/grayscale-background.jpg");
   background-position: center;
@@ -434,61 +434,39 @@ a {
 }
 
 .gallery {
-  height: fit-content;
+  height: 110vh;
   width: 100%;
   background-image: linear-gradient(to bottom, #30cfd0 0%, #e2e1e1 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 4.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 0.425rem;
+  padding-bottom: 4.25rem;
 }
 @media only screen and (max-width: 850px) {
   .gallery {
-    padding-top: 1.25rem;
     padding-bottom: 4.25rem;
   }
 }
 .gallery .grid {
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.gallery .grid:first-child {
+  margin-bottom: 1rem;
 }
 .gallery .grid-item {
-  height: auto;
   border-radius: 0.5rem;
 }
-@media only screen and (max-width: 2000px) {
-  .gallery .grid-item {
-    max-width: 250px;
-    margin: 1rem;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .gallery .grid-item {
-    max-width: 200px;
-    margin: 0.425rem;
-  }
-}
 @media only screen and (max-width: 520px) {
   .gallery .grid-item {
-    max-width: 100px;
-  }
-}
-@media only screen and (max-width: 520px) {
-  .gallery .grid-item:last-child {
-    display: none;
-  }
-}
-@media only screen and (max-width: 520px) {
-  .gallery .grid-item.width2 {
-    max-width: 200px;
+    width: 150px;
+    padding-bottom: 2.25rem;
   }
 }
 .gallery .grid-item img {
   width: 100%;
   border-radius: 0.5rem;
-  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2), 0px -1px 10px rgba(0, 0, 0, 0.2);
 }
 
 #about {
