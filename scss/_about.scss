@@ -212,7 +212,6 @@
             width: 100%;
             align-items: center;
             color: $white;
-            // transform: translateZ(0);
 
             &__header {
               text-align: center;
@@ -415,6 +414,12 @@
                 }
               }
 
+              span {
+                padding-top: 1.25rem;
+                font-size: 1.25rem;
+                display: block;
+              }
+
               .socials {
                 padding-top: 1.425rem;
 
@@ -441,6 +446,10 @@
 
                   &.twt:hover {
                     color: #1da1f2;
+                  }
+
+                  &.gm:hover {
+                    color: #ea4335;
                   }
                 }
               }

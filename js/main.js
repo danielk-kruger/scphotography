@@ -6,6 +6,21 @@ const authorContent = document.querySelectorAll('.creator');
 const aboutContent = document.querySelector('.authors');
 
 $(document).ready(function () {
+  $('.user-review__submit').on('click', function () {
+    $('.user-review__form').addClass('active');
+
+    $('.user-review__form').fadeIn('fast', function () {
+      $('#form-field').fadeIn('fast');
+    });
+  });
+
+  $('.close-popup').on('click', function () {
+    $('.user-review__form').fadeOut('fast', function () {
+      $('#form-field').fadeOut('fast');
+      $('.user-review__form').removeClass('active');
+    });
+  });
+
   sliderSettings = {
     item: 10,
     cssEasing: 'cubic-bezier(0.35, 0, 0.35, 1)',
@@ -36,6 +51,14 @@ $(document).ready(function () {
   $('#light-slider-2').lightSlider(sliderSettings);
 });
 
+function lockScrolling() {
+  document.querySelector('body').style.overflow = 'hidden';
+}
+
+function unlockScrolling() {
+  document.querySelector('body').style.overflow = 'auto';
+}
+
 function hideMenu() {
   const icon = mobileMenu.querySelector('i');
   nav.classList.toggle('mobile');
@@ -43,9 +66,11 @@ function hideMenu() {
   if (nav.classList.contains('mobile')) {
     icon.classList.remove('fa-bars');
     icon.classList.add('fa-times');
+    lockScrolling();
   } else {
     icon.classList.remove('fa-times');
     icon.classList.add('fa-bars');
+    unlockScrolling();
   }
 }
 
@@ -83,4 +108,15 @@ window.addEventListener('DOMContentLoaded', () => {
       hideMenu();
     }
   });
+
+  // document
+  //   .querySelector('input[type="file"]')
+  //   .addEventListener('change', function () {
+  //     if (this.files && this.files[0]) {
+  //       let img = document.querySelector('img');
+  //       img.src = URL.createObjectURL(this.files[0]);
+  //     }
+  //   });
 });
+
+// POPUP elements
