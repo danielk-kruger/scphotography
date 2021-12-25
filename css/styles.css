@@ -984,13 +984,14 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6.25rem 0rem;
+  padding: 4.25rem 0rem;
   background-image: linear-gradient(to top, #330867 0%, #e7f0fd 100%);
   overflow: hidden;
 }
 .faq .user-review__submit {
   text-transform: capitalize;
   padding: 12px 18px;
+  margin-top: 1.25rem;
   border: none;
   outline: none;
   font-size: 1.425rem;
@@ -1152,15 +1153,6 @@ a {
 .faq .user-review__form form .form-controls .user-image label span {
   margin-left: 0.5rem;
 }
-.faq-container {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background: #d9d7dc;
-  padding: 1.25rem 2rem;
-}
 .faq .reviews {
   width: 65%;
   display: flex;
@@ -1234,6 +1226,83 @@ a {
   color: #accbee;
   font-size: 40px;
   float: left;
+}
+.faq-container {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background-position: center;
+  background-size: 100%;
+  padding: 1.25rem 0rem;
+  margin-top: 5.5rem;
+  border-radius: 0.5rem;
+}
+.faq-container .faq-header {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4.25rem;
+}
+.faq-container .faq-header h2 {
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+.faq-container .faq-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 3px 12px rgba(100, 100, 99, 0.35);
+  width: 80%;
+  color: #222;
+}
+.faq-container .faq-content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  background: #efefef;
+  padding: 1rem 1.425rem;
+  border-bottom: 1px solid #6d6875;
+  transition: background 0.25s ease;
+}
+.faq-container .faq-content__title:hover {
+  background: #e1e0e3;
+}
+.faq-container .faq-content__title--text {
+  font-size: 1.625rem;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  color: #222;
+  pointer-events: none;
+}
+.faq-container .faq-content__title i {
+  font-size: 1.625rem;
+}
+.faq-container .faq-content__acc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #efefef;
+  padding: 1rem 1.425rem 2rem;
+}
+.faq-container .faq-content__acc.hide {
+  display: none;
+}
+.faq-container .faq-content__acc--info {
+  text-align: left;
+}
+.faq-container .faq-content__acc--info p {
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,6 +21,41 @@ $(document).ready(function () {
     });
   });
 
+  // Accordion menu
+
+  function hideMenuItem(event) {
+    if ($(event.target).hasClass('faq-toggle')) {
+      if ($(event.target).next().hasClass('hide')) {
+        $(event.target)
+          .next()
+          .slideDown('fast', function () {
+            $(event.target).next().removeClass('hide');
+          });
+        $(event.target)
+          .children('i')
+          .first()
+          .removeClass('fa-plus')
+          .addClass('fa-minus');
+      } else {
+        $(event.target)
+          .next()
+          .slideUp('fast', function () {
+            $(event.target).next().addClass('hide');
+          });
+        $(event.target)
+          .children('i')
+          .first()
+          .removeClass('fa-minus')
+          .addClass('fa-plus');
+      }
+    }
+  }
+
+  $('.faq-content').on('click', (e) => {
+    hideMenuItem(e);
+    $('.faq-toggle').toggleClass('selected');
+  });
+
   sliderSettings = {
     item: 10,
     cssEasing: 'cubic-bezier(0.35, 0, 0.35, 1)',
@@ -108,15 +143,6 @@ window.addEventListener('DOMContentLoaded', () => {
       hideMenu();
     }
   });
-
-  // document
-  //   .querySelector('input[type="file"]')
-  //   .addEventListener('change', function () {
-  //     if (this.files && this.files[0]) {
-  //       let img = document.querySelector('img');
-  //       img.src = URL.createObjectURL(this.files[0]);
-  //     }
-  //   });
 });
 
 // POPUP elements
