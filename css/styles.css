@@ -984,7 +984,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 4.25rem 0rem;
+  padding: 4.25rem 0rem 8rem;
   background-image: linear-gradient(to top, #330867 0%, #e7f0fd 100%);
   overflow: hidden;
 }
@@ -1002,7 +1002,7 @@ a {
   border-radius: 0.5rem;
   cursor: pointer;
   box-shadow: 1px 2px 15px rgba(194, 194, 194, 0.3);
-  transition: all 0.2s ease;
+  transition: all 0.35s;
 }
 .faq .user-review__submit:hover {
   transform: scale(1.05);
@@ -1285,6 +1285,7 @@ a {
 }
 .faq-container .faq-content__title i {
   font-size: 1.625rem;
+  pointer-events: none;
 }
 .faq-container .faq-content__acc {
   width: 100%;
@@ -1303,6 +1304,12 @@ a {
 }
 .faq-container .faq-content__acc--info p {
   font-size: 1.25rem;
+}
+
+#footer {
+  height: 40vh;
+  width: 100%;
+  background: #330867;
 }
 
 /*# sourceMappingURL=styles.css.map */

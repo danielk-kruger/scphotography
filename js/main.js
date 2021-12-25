@@ -28,7 +28,7 @@ $(document).ready(function () {
       if ($(event.target).next().hasClass('hide')) {
         $(event.target)
           .next()
-          .slideDown('fast', function () {
+          .slideDown(300, function () {
             $(event.target).next().removeClass('hide');
           });
         $(event.target)
@@ -39,7 +39,7 @@ $(document).ready(function () {
       } else {
         $(event.target)
           .next()
-          .slideUp('fast', function () {
+          .slideUp(300, function () {
             $(event.target).next().addClass('hide');
           });
         $(event.target)
