@@ -140,7 +140,7 @@
     background: $secondary-gradient;
     background-position: center;
     background-size: 100%;
-    padding: 1.25rem 0rem;
+    padding: 1.25rem 0rem 4.25rem;
     margin-top: calc($m-xwide + 1.25rem);
     border-radius: 0.5rem;
 
@@ -166,10 +166,18 @@
       box-shadow: 1px 3px 12px rgba(100, 100, 99, 0.35);
       width: 80%;
       color: $black;
+      border-radius: 0.5rem;
 
-      // &:not(:first-child) {
-      //   border-radius: 0;
-      // }
+      .first {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+
+      .last {
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border: none;
+      }
 
       &__title {
         display: flex;
@@ -179,8 +187,6 @@
         cursor: pointer;
         background: $white;
         padding: 1rem 1.425rem;
-        // border-top-left-radius: 0.5rem;
-        // border-top-right-radius: 0.5rem;
         border-bottom: 1px solid $gray;
         transition: background 0.25s ease;
 
@@ -199,6 +205,7 @@
         i {
           font-size: 1.625rem;
           pointer-events: none;
+          padding-left: $p-small;
         }
       }
 
@@ -219,9 +226,47 @@
 
         &--info {
           text-align: left;
+          display: flex;
+          justify-content: space-between;
 
           p {
             font-size: 1.25rem;
+            width: 65%;
+          }
+
+          .ans-rating {
+            text-align: right;
+            align-self: flex-end;
+            margin-top: 5.25rem;
+            // margin-right: 1.25rem;
+            padding: 0.5rem;
+            width: 35%;
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+              color: $gray;
+              font-size: 1.025rem;
+              cursor: default;
+            }
+
+            i {
+              // padding-left: 1.25rem;
+              display: inline-block;
+              cursor: pointer;
+              color: $black;
+              font-size: 1.5rem;
+              transition: color 0.25s ease;
+
+              &:nth-child(1) {
+                margin-left: 1.5rem;
+                font-size: 3rem;
+              }
+
+              &:hover {
+                color: $secondary-light;
+              }
+            }
           }
         }
       }

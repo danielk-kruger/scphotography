@@ -31,6 +31,7 @@ $(document).ready(function () {
           .slideDown(300, function () {
             $(event.target).next().removeClass('hide');
           });
+        $('.last').css('border-radius', '0');
         $(event.target)
           .children('i')
           .first()
@@ -42,6 +43,8 @@ $(document).ready(function () {
           .slideUp(300, function () {
             $(event.target).next().addClass('hide');
           });
+        $('.last').css('border-radius', '');
+
         $(event.target)
           .children('i')
           .first()

@@ -1,10 +1,5 @@
 .user-review__form {
-  // position: fixed;
-  // left: -1000px;
-  // z-index: -999;
   display: none;
-  // visibility: hidden;
-  // transition: all 0.2s;
 
   &.active {
     position: fixed;
@@ -22,11 +17,9 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     overflow: hidden;
-    // visibility: visible;
   }
 
   form {
-    // height: auto;
     max-width: 75%;
     width: 50%;
     display: flex;
@@ -50,8 +43,6 @@
     }
 
     .form-header {
-      // padding-bottom: 2.25rem;
-
       h3 {
         font-size: 2.25rem;
         font-family: $lato;

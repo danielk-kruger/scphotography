@@ -1237,7 +1237,7 @@ a {
   background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   background-position: center;
   background-size: 100%;
-  padding: 1.25rem 0rem;
+  padding: 1.25rem 0rem 4.25rem;
   margin-top: 5.5rem;
   border-radius: 0.5rem;
 }
@@ -1261,6 +1261,16 @@ a {
   box-shadow: 1px 3px 12px rgba(100, 100, 99, 0.35);
   width: 80%;
   color: #222;
+  border-radius: 0.5rem;
+}
+.faq-container .faq-content .first {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.faq-container .faq-content .last {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: none;
 }
 .faq-container .faq-content__title {
   display: flex;
@@ -1286,6 +1296,7 @@ a {
 .faq-container .faq-content__title i {
   font-size: 1.625rem;
   pointer-events: none;
+  padding-left: 1.25rem;
 }
 .faq-container .faq-content__acc {
   width: 100%;
@@ -1301,9 +1312,40 @@ a {
 }
 .faq-container .faq-content__acc--info {
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 .faq-container .faq-content__acc--info p {
   font-size: 1.25rem;
+  width: 65%;
+}
+.faq-container .faq-content__acc--info .ans-rating {
+  text-align: right;
+  align-self: flex-end;
+  margin-top: 5.25rem;
+  padding: 0.5rem;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.faq-container .faq-content__acc--info .ans-rating a {
+  color: #6d6875;
+  font-size: 1.025rem;
+  cursor: default;
+}
+.faq-container .faq-content__acc--info .ans-rating i {
+  display: inline-block;
+  cursor: pointer;
+  color: #222;
+  font-size: 1.5rem;
+  transition: color 0.25s ease;
+}
+.faq-container .faq-content__acc--info .ans-rating i:nth-child(1) {
+  margin-left: 1.5rem;
+  font-size: 3rem;
+}
+.faq-container .faq-content__acc--info .ans-rating i:hover {
+  color: #accbee;
 }
 
 #footer {
