@@ -27,6 +27,10 @@
     box-shadow: 1px 2px 15px rgba(194, 194, 194, 0.3);
     transition: all 0.35s;
 
+    @include lg-screen {
+      padding: 12px 24px;
+    }
+
     &:hover {
       transform: scale(1.05);
     }
@@ -41,6 +45,12 @@
     align-items: center;
     flex-wrap: wrap;
     // flex-grow: auto;
+
+    @include lg-screen {
+      // flex-wrap: nowrap;
+      justify-content: space-around;
+      width: 80%;
+    }
 
     &-card {
       width: 380px;
@@ -58,6 +68,11 @@
 
       &:nth-child(4) {
         margin-right: -180px;
+
+        @include lg-screen {
+          // margin: 0;
+          margin-right: 0.725rem;
+        }
       }
 
       &__profile {
@@ -136,13 +151,16 @@
     justify-content: space-evenly;
     align-items: center;
 
-    // background: lighten($gray, 42%);
     background: $secondary-gradient;
     background-position: center;
     background-size: 100%;
     padding: 1.25rem 0rem 4.25rem;
-    margin-top: calc($m-xwide + 1.25rem);
+    margin-top: calc($m-xwide + 3.25rem);
     border-radius: 0.5rem;
+
+    @include lg-screen {
+      width: 80%;
+    }
 
     .faq-header {
       text-align: center;
@@ -154,6 +172,10 @@
         font-family: $lato;
         font-weight: 300;
         font-size: 2.25rem;
+
+        @include lg-screen {
+          font-size: 2rem;
+        }
       }
     }
 
@@ -168,6 +190,10 @@
       color: $black;
       border-radius: 0.5rem;
 
+      @include lg-screen {
+        width: 85%;
+      }
+
       .first {
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
@@ -177,6 +203,12 @@
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
         border: none;
+
+        & + .faq-content__acc {
+          border-bottom-right-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          border-top: 1px solid $gray;
+        }
       }
 
       &__title {
@@ -195,7 +227,7 @@
         }
 
         &--text {
-          font-size: 1.625rem;
+          font-size: 1.25rem;
           font-family: $lato;
           font-weight: normal;
           color: $black;
@@ -205,7 +237,7 @@
         i {
           font-size: 1.625rem;
           pointer-events: none;
-          padding-left: $p-small;
+          padding-left: $p-medium;
         }
       }
 
@@ -265,6 +297,10 @@
 
               &:hover {
                 color: $secondary-light;
+              }
+
+              &:nth-child(3):hover {
+                color: orangered;
               }
             }
           }

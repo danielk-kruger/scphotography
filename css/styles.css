@@ -1004,6 +1004,11 @@ a {
   box-shadow: 1px 2px 15px rgba(194, 194, 194, 0.3);
   transition: all 0.35s;
 }
+@media only screen and (max-width: 1380px) {
+  .faq .user-review__submit {
+    padding: 12px 24px;
+  }
+}
 .faq .user-review__submit:hover {
   transform: scale(1.05);
 }
@@ -1160,6 +1165,12 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 1380px) {
+  .faq .reviews {
+    justify-content: space-around;
+    width: 80%;
+  }
+}
 .faq .reviews-card {
   width: 380px;
   margin-right: 0.725rem;
@@ -1174,6 +1185,11 @@ a {
 }
 .faq .reviews-card:nth-child(4) {
   margin-right: -180px;
+}
+@media only screen and (max-width: 1380px) {
+  .faq .reviews-card:nth-child(4) {
+    margin-right: 0.725rem;
+  }
 }
 .faq .reviews-card__profile {
   background: #accbee;
@@ -1238,8 +1254,13 @@ a {
   background-position: center;
   background-size: 100%;
   padding: 1.25rem 0rem 4.25rem;
-  margin-top: 5.5rem;
+  margin-top: 7.5rem;
   border-radius: 0.5rem;
+}
+@media only screen and (max-width: 1380px) {
+  .faq-container {
+    width: 80%;
+  }
 }
 .faq-container .faq-header {
   text-align: center;
@@ -1252,6 +1273,11 @@ a {
   font-weight: 300;
   font-size: 2.25rem;
 }
+@media only screen and (max-width: 1380px) {
+  .faq-container .faq-header h2 {
+    font-size: 2rem;
+  }
+}
 .faq-container .faq-content {
   text-align: left;
   display: flex;
@@ -1263,6 +1289,11 @@ a {
   color: #222;
   border-radius: 0.5rem;
 }
+@media only screen and (max-width: 1380px) {
+  .faq-container .faq-content {
+    width: 85%;
+  }
+}
 .faq-container .faq-content .first {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1271,6 +1302,11 @@ a {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   border: none;
+}
+.faq-container .faq-content .last + .faq-content__acc {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top: 1px solid #6d6875;
 }
 .faq-container .faq-content__title {
   display: flex;
@@ -1287,7 +1323,7 @@ a {
   background: #e1e0e3;
 }
 .faq-container .faq-content__title--text {
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-family: "Lato", sans-serif;
   font-weight: normal;
   color: #222;
@@ -1296,7 +1332,7 @@ a {
 .faq-container .faq-content__title i {
   font-size: 1.625rem;
   pointer-events: none;
-  padding-left: 1.25rem;
+  padding-left: 1.625rem;
 }
 .faq-container .faq-content__acc {
   width: 100%;
@@ -1346,6 +1382,9 @@ a {
 }
 .faq-container .faq-content__acc--info .ans-rating i:hover {
   color: #accbee;
+}
+.faq-container .faq-content__acc--info .ans-rating i:nth-child(3):hover {
+  color: orangered;
 }
 
 #footer {
